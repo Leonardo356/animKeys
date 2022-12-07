@@ -30,7 +30,7 @@ const MpBtn = () => {
 
   const navigate = useNavigate();
   const navigateToApp = () => {
-    navigate('/appPage');
+    navigate('/appPage/');
   };
 
     return(

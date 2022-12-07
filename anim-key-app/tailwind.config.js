@@ -20,6 +20,11 @@ module.exports = {
         insetShadow: 'inset 0px 8px 16px 1px rgba(0,0,0,0.18)',
         sh1: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
         sh2: 'rgba(50, 50, 93, 0.25) 0px 50px 50px -20px, rgba(0, 0, 0, 0.3) 0px 30px 30px -30px',
+        sh3: 'rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px',
+      },
+
+      gridTemplateRows: {
+        '127': '5rem 10rem auto',
       },
     },
   },
