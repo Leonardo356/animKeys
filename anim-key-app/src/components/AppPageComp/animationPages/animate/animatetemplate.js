@@ -4,7 +4,6 @@ const AnimTemplate = props => {
 
     let containerClass = props.containerClass;
     let titles = props.titles;
-
     useEffect(() => {
         
         let contAnimTemplate = document.querySelector(`.${containerClass}`)
@@ -31,9 +30,29 @@ const AnimTemplate = props => {
             'cursor-pointer',
             'opacity-[0.9]',
             'hover:opacity-[1]',
+            'animationBtn',
             );
 
             contAnimTemplate.appendChild(el);
+        });
+
+        let animationBtn = document.querySelectorAll('.animationBtn');
+        let squareShape = document.querySelector('.squareShape');
+        animationBtn[0].style.background = '#D1E9F0'
+
+        window.addEventListener('click', e => {
+            animationBtn.forEach(btn => {
+                  if(!e.target.classList.contains('animationBtn')) return;
+                  if(btn === e.target) {
+                    squareShape.classList.add(`${btn.innerText}`);
+                    btn.style.background = '#D1E9F0';
+                  }
+                  else {
+                    squareShape.classList.remove(`${btn.innerText}`);
+                    btn.style.background = '';
+                  }
+
+            });
         });
 
     }, [containerClass, titles]);

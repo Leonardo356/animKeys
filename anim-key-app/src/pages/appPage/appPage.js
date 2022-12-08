@@ -12,7 +12,14 @@ import NavAnimBonus from "../../components/AppPageComp/NavAnim/NavAnimBonus";
 
 import AnimShapes from "../../components/AppPageComp/animationPages/AnimShapes";
 
-import BasicScale from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import AnimSettings from "../../components/AppPageComp/animationPages/animSettings/animSettings";
+
+import { BasicScale } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { BasicRotate } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { BasicFlip } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { BasicSwing } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { BasicSlide } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { BasicShadow } from "../../components/AppPageComp/animationPages/animate/AnimComp";
 
 const AppPage = () => {
 
@@ -50,13 +57,13 @@ const AppPage = () => {
               shadow-sh2
               ">
                 <Routes >
-                    <Route path="/" element={<NavAnim />} />
-                    <Route path="/entrances" element={<NavAnimEntrances />} />
-                    <Route path="/exits" element={<NavAnimExits />} />
-                    <Route path="/text" element={<NavAnimTxt />} />
-                    <Route path="/attention" element={<NavAnimAttention />} />
-                    <Route path="/shadows" element={<NavAnimShadows />} />
-                    <Route path="/bonus" element={<NavAnimBonus />} />
+                    <Route path="/*" element={<NavAnim />} />
+                    <Route path="/entrances/*" element={<NavAnimEntrances />} />
+                    <Route path="/exits/*" element={<NavAnimExits />} />
+                    <Route path="/text/*" element={<NavAnimTxt />} />
+                    <Route path="/attention/*" element={<NavAnimAttention />} />
+                    <Route path="/shadows/*" element={<NavAnimShadows />} />
+                    <Route path="/bonus/*" element={<NavAnimBonus />} />
                   </Routes>
               </div>
 
@@ -70,7 +77,15 @@ const AppPage = () => {
               relative
               ">
                   <AnimShapes />
-                  <BasicScale />
+                  <AnimSettings />
+                  <Routes >
+                    <Route path="/" element={<BasicScale />} />
+                    <Route path="/basicRotate" element={<BasicRotate />} />
+                    <Route path="/basicFlip" element={<BasicFlip />} />
+                    <Route path="/basicSwing" element={<BasicSwing />} />
+                    <Route path="/basicSlide" element={<BasicSlide />} />
+                    <Route path="/basicShadow" element={<BasicShadow />} />
+                  </Routes>
               </div>
            </div>
         </>
