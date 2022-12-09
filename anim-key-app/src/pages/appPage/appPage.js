@@ -74,6 +74,7 @@ const AppPage = () => {
               row-end-4
               col-start-1
               col-end-2
+              bg-[lightgray]
               relative
               ">
                   <AnimShapes />

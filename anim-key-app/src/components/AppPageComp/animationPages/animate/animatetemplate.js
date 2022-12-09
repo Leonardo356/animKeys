@@ -4,6 +4,7 @@ const AnimTemplate = props => {
 
     let containerClass = props.containerClass;
     let titles = props.titles;
+    
     useEffect(() => {
         
         let contAnimTemplate = document.querySelector(`.${containerClass}`)
@@ -50,7 +51,7 @@ const AnimTemplate = props => {
                   else {
                     squareShape.classList.remove(`${btn.innerText}`);
                     btn.style.background = '';
-                  }
+                  };
 
             });
         });

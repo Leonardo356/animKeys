@@ -11,6 +11,7 @@ const AnimTab = () => {
            flex
            justify-center
            items-center
+           animShapesContainer
            " 
            >
             <Square />
@@ -25,16 +26,15 @@ const Square = () => {
         <div className="
         w-[10vmax]
         h-[10vmax]
-        scale-up-center
-        bg-txtColor2
         rounded-[1rem]
         squareShape
-        text-white
+        text-txtColor2
+        font-bold
+        text-[10vmax]
         flex
         justify-center
         items-center
-        font-bold
-        text-[10vmax]
+        bg-white
         ">
           <h1>A</h1>
     </div>

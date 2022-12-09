@@ -4,28 +4,28 @@ import { useLocation } from "react-router-dom";
 
 import AnimBtn from "./AnimationBtn";
 
+import { changeAnim } from "../../functions/functions";
+import { changeBtn } from "../../functions/functions";
+
 const NavAnim = () => {
 
     const location = useLocation();
 
     useEffect(() => {
+
+      changeAnim('/appPage/', 'scale-up-center');
+      changeAnim('/appPage/basicRotate', 'rotate-center');
+      changeAnim('/appPage/basicFlip', 'flip-hor-bottom');
+      changeAnim('/appPage/basicSwing', 'swing-top-fwd');
+      changeAnim('/appPage/basicSlide', 'slide-top');
+      changeAnim('/appPage/basicShadow', 'shadow-top');
   
-      const changeBtn = (path, targetClass) => {
-        let pathName = window.location.pathname;
-        let target = document.querySelector(`.${targetClass}`);
-  
-        if(pathName === path) {
-          let navTopicsBtns = document.querySelectorAll('.navTopicsBtns');
-  
-          navTopicsBtns.forEach(btn => {
-            if(btn === target ) btn.classList.add('bg-[#344966]', 'shadow-sh1');
-            else btn.classList.remove('bg-[#344966]', 'shadow-sh1');
-          });
-        };
-      };
-  
-      changeBtn('/appPage/', 'basicBtnOnNav');
-      changeBtn('/appPage/entrances', 'entrancesBtnOnNav');
+      changeBtn('/appPage/', 'scaleParentBasic');
+      changeBtn('/appPage/basicRotate', 'rotateParentBasic');
+      changeBtn('/appPage/basicFlip', 'flipParentBasic');
+      changeBtn('/appPage/basicSwing', 'swingParentBasic');
+      changeBtn('/appPage/basicSlide', 'slideParentBasic');
+      changeBtn('/appPage/basicShadow', 'shadowParentBasic');
     }, [location]);
   
     let navigate = useNavigate();
@@ -50,12 +50,12 @@ const NavAnim = () => {
            gap-[1rem]
            "
            >
-              <div onClick={navigateToBasicScale} ><AnimBtn size='w-full h-full' animName='Scale' /></div>
-              <div onClick={navigateToBasicRotate}><AnimBtn animName='Rotate' /></div>
-              <div onClick={navigateToBasicFlip}><AnimBtn animName='Flip' /></div>
-              <div onClick={navigateToBasicSwing}><AnimBtn animName='Swing' /></div>
-              <div onClick={navigateToBasicSlide}><AnimBtn animName='Slide' /></div>
-              <div onClick={navigateToBasicShadow}><AnimBtn animName='Shadow' /></div>
+              <div className="scaleParentBasic" onClick={navigateToBasicScale} ><AnimBtn size='w-full h-full' animName='Scale' /></div>
+              <div className="rotateParentBasic" onClick={navigateToBasicRotate}><AnimBtn animName='Rotate' /></div>
+              <div className="flipParentBasic" onClick={navigateToBasicFlip}><AnimBtn animName='Flip' /></div>
+              <div className="swingParentBasic" onClick={navigateToBasicSwing}><AnimBtn animName='Swing' /></div>
+              <div className="slideParentBasic" onClick={navigateToBasicSlide}><AnimBtn animName='Slide' /></div>
+              <div className="shadowParentBasic" onClick={navigateToBasicShadow}><AnimBtn animName='Shadow' /></div>
            </div>
         </>
     );
