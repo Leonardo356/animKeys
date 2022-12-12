@@ -67,3 +67,129 @@ export function BasicShadow() {
         </>
     );
 };
+
+export function TextScale() {
+    return(
+        <AnimTemplate
+         containerClass='textScaleCont'
+         titles={'scale-in-center scale-in-up scale-in-down scale-in-left scale-in-right scale-out-center scale-out-up scale-out-down scale-out-left scale-out-right'}
+        />
+    );
+};
+
+export function TextTracking() {
+    return(
+        <AnimTemplate
+         containerClass='textScaleCont'
+         titles={'tracking-in-expand tracking-in-expand-fwd tracking-in-expand-fwd-top tracking-in-expand-fwd-bottom tracking-in-contract tracking-in-contract-bck tracking-in-contract-bck-top tracking-in-contract-bck-bottom'}
+        />
+    );
+};
+
+export function TextBlur() {
+    return(
+        <AnimTemplate
+         containerClass='textScaleCont'
+         titles={'focus-in focus-in-expand focus-in-expand-fwd focus-in-contract focus-in-contract-bck'}
+        />
+    );
+};
+
+export function TextShadow() {
+    return(
+        <AnimTemplate
+         containerClass='textScaleCont'
+         titles={'text-shd-center text-shd-top text-shd-tr text-shd-right text-shd-br text-shd-bottom text-shd-bl text-shd-left text-shd-tl'}
+        />
+    );
+};
+
+export function TextPopUp() {
+    return(
+        <AnimTemplate
+         containerClass='textScaleCont'
+         titles={'text-pop-up-top text-pop-up-tr text-pop-up-right text-pop-up-br text-pop-up-bottom text-pop-up-bl text-pop-up-left text-pop-up-tl'}
+        />
+    );
+};
+
+export function TextJello() {
+    return(
+        <AnimTemplate
+         containerClass='textScaleCont'
+         titles={'text-jello-x text-jello-y text-jello-diag-1 text-jello-diag-2'}
+        />
+    );
+};
+
+export function AttentionVibrate() {
+    return(
+        <AnimTemplate
+         containerClass='atScaleCont'
+         titles={'vibrate-1 vibrate-2 vibrate-3'}
+        />
+    );
+};
+
+export function AttentionShake() {
+    return(
+        <AnimTemplate
+         containerClass='atScaleCont'
+         titles={'shake-top shake-bottom shake-left shake-right shake-lr'}
+        />
+    );
+};
+
+export function AttentionBounce() {
+    return(
+        <AnimTemplate
+         containerClass='atScaleCont'
+         titles={'bounce-top bounce-bottom bounce-left bounce-right'}
+        />
+    );
+};
+
+export function AttentionPulsate() {
+    return(
+        <AnimTemplate
+         containerClass='atScaleCont'
+         titles={'pulsate-1 pulsate-2 pulsate-3 pulsate-4'}
+        />
+    );
+};
+
+export function AttentionBlink() {
+    return(
+        <AnimTemplate
+         containerClass='atScaleCont'
+         titles={'blink-1 blink-2'}
+        />
+    );
+};
+
+export function ShadowBasic() {
+    return(
+        <AnimTemplate
+         containerClass='shadowCont'
+         titles={'shadow-bs-1 shadow-bs-2 shadow-bs-3 shadow-bs-4 shadow-bs-5 shadow-bs-6 shadow-bs-7 shadow-bs-8 shadow-bs-9 shadow-bs-10 shadow-bs-11 shadow-bs-12'}
+        />
+    );
+};
+
+export function ShadowInset() {
+    return(
+        <AnimTemplate
+         containerClass='shadowCont'
+         titles={'shadow-ins-1 shadow-ins-2 shadow-ins-3 shadow-ins-4 shadow-ins-5 shadow-ins-6'}
+        />
+    );
+};
+
+export function Shadow3D() {
+    return(
+        <AnimTemplate
+         containerClass='shadowCont'
+         titles={'shadow-3d-1 shadow-3d-2 shadow-3d-3'}
+        />
+    );
+};

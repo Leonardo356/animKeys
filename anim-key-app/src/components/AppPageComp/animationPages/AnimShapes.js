@@ -1,7 +1,12 @@
 import React from "react";
 import './animation.css'
 
+import {Routes, Route} from 'react-router-dom';
+
 const AnimTab = () => {
+
+
+
     return(
         <>
            <div
@@ -14,7 +19,10 @@ const AnimTab = () => {
            animShapesContainer
            " 
            >
-            <Square />
+            <Routes >
+                <Route path="/*" element={<Square />} />
+                <Route path="/text/*" element={<Text />} />
+            </Routes>
            </div>
         </>
     );
@@ -36,10 +44,25 @@ const Square = () => {
         items-center
         bg-white
         ">
-          <h1>A</h1>
     </div>
     </>
    );
+};
+
+const Text = () => {
+    return(
+        <>
+           <div className="w-max h-max textAnimation flex font-bold text-white text-[5vmax]">
+               <div>A</div>
+               <div>N</div>
+               <div>I</div>
+               <div>M</div>
+               <div>A</div>
+               <div>T</div>
+               <div>E</div>
+           </div>
+        </>
+    );
 };
 
 export default AnimTab;

@@ -22,20 +22,39 @@ const NavTypes = () => {
       };
     };
 
+    //select nav btn on window path change
     changeBtn('/appPage/', 'basicBtnOnNav');
-    changeBtn('/appPage/entrances', 'entrancesBtnOnNav');
-    changeBtn('/appPage/exits', 'exitsBtnOnNav');
+    changeBtn('/appPage/basicRotate', 'basicBtnOnNav');
+    changeBtn('/appPage/basicFlip', 'basicBtnOnNav');
+    changeBtn('/appPage/basicSwing', 'basicBtnOnNav');
+    changeBtn('/appPage/basicSlide', 'basicBtnOnNav');
+    changeBtn('/appPage/basicShadow', 'basicBtnOnNav');
+
     changeBtn('/appPage/text', 'textBtnOnNav');
+    changeBtn('/appPage/text/textTracking', 'textBtnOnNav');
+    changeBtn('/appPage/text/textBlur', 'textBtnOnNav');
+    changeBtn('/appPage/text/textShadow', 'textBtnOnNav');
+    changeBtn('/appPage/text/textPop-up', 'textBtnOnNav');
+    changeBtn('/appPage/text/textJello', 'textBtnOnNav');
+
     changeBtn('/appPage/attention', 'attentionBtnOnNav');
+    changeBtn('/appPage/attention/Shake', 'attentionBtnOnNav');
+    changeBtn('/appPage/attention/Jello', 'attentionBtnOnNav');
+    changeBtn('/appPage/attention/Wobble', 'attentionBtnOnNav');
+    changeBtn('/appPage/attention/Bounce', 'attentionBtnOnNav');
+    changeBtn('/appPage/attention/Pulsate', 'attentionBtnOnNav');
+    changeBtn('/appPage/attention/Blink', 'attentionBtnOnNav');
+
     changeBtn('/appPage/shadows', 'shadowsBtnOnNav');
+    changeBtn('/appPage/shadows/inset', 'shadowsBtnOnNav');
+    changeBtn('/appPage/shadows/3d', 'shadowsBtnOnNav');
+
     changeBtn('/appPage/bonus', 'bonusBtnOnNav');
   }, [location]);
 
   let navigate = useNavigate();
 
   const navigateToBasic = () => {navigate('/appPage/')};
-  const navigateToEntrances = () => {navigate('/appPage/entrances')};
-  const navigateToExits = () => {navigate('/appPage/exits')};
   const navigateToText = () => {navigate('/appPage/text')};
   const navigateToAttention = () => {navigate('/appPage/attention')};
   const navigateToShadows = () => {navigate('/appPage/shadows')};
@@ -56,8 +75,6 @@ const NavTypes = () => {
             bg-txtColor2
           ">
               <div onClick={navigateToBasic} ><NavBtn class='basicBtnOnNav' name='Basic' focusClass='bg-[#344966] shadow-sh1' /></div>
-              <div onClick={navigateToEntrances} ><NavBtn class='entrancesBtnOnNav' name='Entrances' /></div>
-              <div onClick={navigateToExits} ><NavBtn class='exitsBtnOnNav' name='Exits' /></div>
               <div onClick={navigateToText} ><NavBtn class='textBtnOnNav' name='Text' /></div>
               <div onClick={navigateToAttention} ><NavBtn class='attentionBtnOnNav' name='Attention' /></div>
               <div onClick={navigateToShadows} ><NavBtn class='shadowsBtnOnNav' name='Shadows' /></div>
@@ -68,22 +85,10 @@ const NavTypes = () => {
 };
 
 const NavBtn = props => {
-
-  const changeColor = e => {
-    let navTopicsBtns = document.querySelectorAll('.navTopicsBtns');
-
-    let el = e.currentTarget;
-
-    navTopicsBtns.forEach(btn => {
-      if(btn === el ) btn.classList.add('bg-[#344966]', 'shadow-sh1');
-      else btn.classList.remove('bg-[#344966]', 'shadow-sh1');
-    });
-    
-  };
     return(
       <>
-         <div onClick={changeColor} 
-         className={` ${props.focusClass} ${props.class} cursor-pointer navTopicsBtns duration-[300ms] rounded-[1rem] w-max h-max py-[.5rem] px-[1rem]`}>
+         <div
+         className={` ${props.focusClass} ${props.class} cursor-pointer navTopicsBtns rounded-[1rem] w-max h-max py-[.5rem] px-[1rem]`}>
           {props.name}
           </div>
       </>

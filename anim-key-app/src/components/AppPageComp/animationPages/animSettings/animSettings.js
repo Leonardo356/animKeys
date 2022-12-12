@@ -2,11 +2,13 @@ import React from "react";
 
 const AnimSettings = () => {
 
-    const resetAnimation = () => {
-        let el = document.querySelector('.squareShape'); 
-        el.style.animation = 'none';
-        void  el.offsetHeight;
-        el.style.animation = '';
+    const resetAnimation = (className) => {
+        let el = document.querySelector(`.${className}`); 
+        if(el !== null) {
+            el.style.animation = 'none';
+            void  el.offsetHeight;
+            el.style.animation = '';
+        }
     }
 
     const changeVar = (varName, value) => {
@@ -18,35 +20,40 @@ const AnimSettings = () => {
         let value = document.querySelector('.durationInp').value;
 
         value === '' ? changeVar('--duration-anim', '0.6s') : changeVar('--duration-anim', `${value}s`);
-        resetAnimation()
+        resetAnimation('squareShape')
+        resetAnimation('textAnimation')
     };
 
     const changeTimmingFunction = e => {
         let value = document.querySelector('.timmingFunctionInp').value;
 
         changeVar('--transition-type', `${value}`);
-        resetAnimation()
+        resetAnimation('squareShape')
+        resetAnimation('textAnimation')
     }
 
     const changeDelay = e => {
         let value = document.querySelector('.delayInp').value;
 
         value === '' ? changeVar('--anim-delay', `0s`) : changeVar('--anim-delay', `${value}s`);
-        resetAnimation()
+        resetAnimation('squareShape')
+        resetAnimation('textAnimation')
     };
 
     const changeDirection = e => {
         let value = document.querySelector('.directionInp').value;
 
         changeVar('--anim-direction', `${value}`);
-        resetAnimation()
+        resetAnimation('squareShape')
+        resetAnimation('textAnimation')
     };
 
     const changeFillMode = e => {
         let value = document.querySelector('.fillModeInp').value;
 
         changeVar('--anim-type', `${value}`);
-        resetAnimation()
+        resetAnimation('squareShape')
+        resetAnimation('textAnimation')
     };
 
     const changeInfinite = e => {

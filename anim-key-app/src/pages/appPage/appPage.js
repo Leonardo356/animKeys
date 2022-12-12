@@ -3,8 +3,6 @@ import NavTypes from "../../components/AppPageComp/NavTypes";
 import {Routes, Route} from 'react-router-dom';
 import NavAnim from "../../components/AppPageComp/NavAnim/NavAnim";
 
-import NavAnimEntrances from "../../components/AppPageComp/NavAnim/NavAnimEntrances";
-import NavAnimExits from "../../components/AppPageComp/NavAnim/NavAnimExits";
 import NavAnimTxt from "../../components/AppPageComp/NavAnim/NavAnimTxt";
 import NavAnimAttention from "../../components/AppPageComp/NavAnim/NavAnimAttention";
 import NavAnimShadows from "../../components/AppPageComp/NavAnim/NavAnimShadow";
@@ -20,6 +18,23 @@ import { BasicFlip } from "../../components/AppPageComp/animationPages/animate/A
 import { BasicSwing } from "../../components/AppPageComp/animationPages/animate/AnimComp";
 import { BasicSlide } from "../../components/AppPageComp/animationPages/animate/AnimComp";
 import { BasicShadow } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+
+import { TextScale } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { TextTracking } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { TextBlur } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { TextShadow } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { TextPopUp } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { TextJello } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+
+import { AttentionVibrate } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { AttentionShake } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { AttentionBounce } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { AttentionPulsate } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { AttentionBlink } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+
+import { ShadowBasic } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { ShadowInset } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import { Shadow3D } from "../../components/AppPageComp/animationPages/animate/AnimComp";
 
 const AppPage = () => {
 
@@ -58,8 +73,6 @@ const AppPage = () => {
               ">
                 <Routes >
                     <Route path="/*" element={<NavAnim />} />
-                    <Route path="/entrances/*" element={<NavAnimEntrances />} />
-                    <Route path="/exits/*" element={<NavAnimExits />} />
                     <Route path="/text/*" element={<NavAnimTxt />} />
                     <Route path="/attention/*" element={<NavAnimAttention />} />
                     <Route path="/shadows/*" element={<NavAnimShadows />} />
@@ -76,6 +89,7 @@ const AppPage = () => {
               col-end-2
               bg-[lightgray]
               relative
+              overflow-hidden
               ">
                   <AnimShapes />
                   <AnimSettings />
@@ -86,6 +100,20 @@ const AppPage = () => {
                     <Route path="/basicSwing" element={<BasicSwing />} />
                     <Route path="/basicSlide" element={<BasicSlide />} />
                     <Route path="/basicShadow" element={<BasicShadow />} />
+                    <Route path="/text" element={<TextScale />} />
+                    <Route path="/text/textTracking" element={<TextTracking />} />
+                    <Route path="/text/textBlur" element={<TextBlur />} />
+                    <Route path="/text/textShadow" element={<TextShadow />} />
+                    <Route path="/text/textPop-up" element={<TextPopUp />} />
+                    <Route path="/text/textJello" element={<TextJello />} />
+                    <Route path="/attention" element={<AttentionVibrate />} />
+                    <Route path="/attention/Shake" element={<AttentionShake />} />
+                    <Route path="/attention/Bounce" element={<AttentionBounce />} />
+                    <Route path="/attention/Pulsate" element={<AttentionPulsate />} />
+                    <Route path="/attention/Blink" element={<AttentionBlink />} />
+                    <Route path="/shadows" element={<ShadowBasic />} />
+                    <Route path="/shadows/inset" element={<ShadowInset />} />
+                    <Route path="/shadows/3d" element={<Shadow3D />} />
                   </Routes>
               </div>
            </div>

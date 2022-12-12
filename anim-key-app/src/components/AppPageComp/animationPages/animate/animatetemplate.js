@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
-
 const AnimTemplate = props => {
 
     let containerClass = props.containerClass;
     let titles = props.titles;
-    
+
     useEffect(() => {
         
         let contAnimTemplate = document.querySelector(`.${containerClass}`)
@@ -39,18 +38,69 @@ const AnimTemplate = props => {
 
         let animationBtn = document.querySelectorAll('.animationBtn');
         let squareShape = document.querySelector('.squareShape');
-        animationBtn[0].style.background = '#D1E9F0'
+        let textAnimation = document.querySelector('.textAnimation');
+        let pathName = window.location.pathname;
+        animationBtn[0].style.background = '#D1E9F0';
 
+        // add and remove btn class animation on click
         window.addEventListener('click', e => {
             animationBtn.forEach(btn => {
                   if(!e.target.classList.contains('animationBtn')) return;
                   if(btn === e.target) {
-                    squareShape.classList.add(`${btn.innerText}`);
                     btn.style.background = '#D1E9F0';
+                    if(
+                      pathName === '/appPage/' ||
+                      pathName === '/appPage/basicRotate' ||
+                      pathName === '/appPage/basicFlip' ||
+                      pathName === '/appPage/basicSwing' ||
+                      pathName === '/appPage/basicSlide' ||
+                      pathName === '/appPage/basicShadow' ||
+                      pathName === '/appPage/attention' ||
+                      pathName === '/appPage/attention/Shake' ||
+                      pathName === '/appPage/attention/Bounce' ||
+                      pathName === '/appPage/attention/Pulsate' ||
+                      pathName === '/appPage/attention/Blink' ||
+                      pathName === '/appPage/shadows' ||
+                      pathName === '/appPage/shadows/inset' ||
+                      pathName === '/appPage/shadows/3d'
+                    ) squareShape.classList.add(`${btn.innerText}`);
+
+                    if(
+                      pathName === '/appPage/text' ||
+                      pathName === '/appPage/text/textTracking' ||
+                      pathName === '/appPage/text/textBlur' ||
+                      pathName === '/appPage/text/textShadow' ||
+                      pathName === '/appPage/text/textPop-up' ||
+                      pathName === '/appPage/text/textJello'
+                    ) textAnimation.classList.add(`${btn.innerText}`);
                   }
                   else {
-                    squareShape.classList.remove(`${btn.innerText}`);
                     btn.style.background = '';
+                    if(
+                      pathName === '/appPage/' ||
+                      pathName === '/appPage/basicRotate' ||
+                      pathName === '/appPage/basicFlip' ||
+                      pathName === '/appPage/basicSwing' ||
+                      pathName === '/appPage/basicSlide' ||
+                      pathName === '/appPage/basicShadow' ||
+                      pathName === '/appPage/attention' ||
+                      pathName === '/appPage/attention/Shake' ||
+                      pathName === '/appPage/attention/Bounce' ||
+                      pathName === '/appPage/attention/Pulsate' ||
+                      pathName === '/appPage/attention/Blink' ||
+                      pathName === '/appPage/shadows' ||
+                      pathName === '/appPage/shadows/inset' ||
+                      pathName === '/appPage/shadows/3d'
+                    ) squareShape.classList.remove(`${btn.innerText}`);
+
+                    if(
+                      pathName === '/appPage/text' ||
+                      pathName === '/appPage/text/textTracking' ||
+                      pathName === '/appPage/text/textBlur' ||
+                      pathName === '/appPage/text/textShadow' ||
+                      pathName === '/appPage/text/textPop-up' ||
+                       pathName === '/appPage/text/textJello'
+                    ) textAnimation.classList.remove(`${btn.innerText}`);
                   };
 
             });
