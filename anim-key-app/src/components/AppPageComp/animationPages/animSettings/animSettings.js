@@ -28,66 +28,84 @@ const AnimSettings = () => {
 };
 
 const Settings = () => {
-
-    const resetAnimation = (className) => {
-        let el = document.querySelector(`.${className}`); 
-        if(el !== null) {
-            el.style.animation = 'none';
-            void  el.offsetHeight;
-            el.style.animation = '';
-        }
-    }
-
-    const changeVar = (varName, value) => {
-        let root = document.querySelector(':root');
-        root.style.setProperty(`${varName}`, `${value}`);
-    }
-
-    const changeDuration = e => {
-        let value = document.querySelector('.durationInp').value;
-
-        value === '' ? changeVar('--duration-anim', '0.6s') : changeVar('--duration-anim', `${value}s`);
-        resetAnimation('squareShape')
-        resetAnimation('textAnimation')
-    };
-
-    const changeTimmingFunction = e => {
-        let value = document.querySelector('.timmingFunctionInp').value;
-
-        changeVar('--transition-type', `${value}`);
-        resetAnimation('squareShape')
-        resetAnimation('textAnimation')
-    }
-
-    const changeDelay = e => {
-        let value = document.querySelector('.delayInp').value;
-
-        value === '' ? changeVar('--anim-delay', `0s`) : changeVar('--anim-delay', `${value}s`);
-        resetAnimation('squareShape')
-        resetAnimation('textAnimation')
-    };
-
-    const changeDirection = e => {
-        let value = document.querySelector('.directionInp').value;
-
-        changeVar('--anim-direction', `${value}`);
-        resetAnimation('squareShape')
-        resetAnimation('textAnimation')
-    };
-
-    const changeFillMode = e => {
-        let value = document.querySelector('.fillModeInp').value;
-
-        changeVar('--anim-type', `${value}`);
-        resetAnimation('squareShape')
-        resetAnimation('textAnimation')
-    };
-
-    const changeInfinite = e => {
-        let value = document.querySelector('.infiniteInp').checked;
-
-        value ? changeVar('--is-infinite', 'infinite') : changeVar('--is-infinite', '');
-    }
+    
+        const resetAnimation = (className) => {
+            let el = document.querySelector(`.${className}`); 
+            if(el !== null) {
+                el.style.animation = 'none';
+                void  el.offsetHeight;
+                el.style.animation = '';
+            };
+        };
+    
+        const changeVar = (varName, value) => {
+            let root = document.querySelector(':root');
+            root.style.setProperty(`${varName}`, `${value}`);
+        };
+    
+        const changeDuration = e => {
+            let animationDuration = document.querySelector('.animationDuration');
+            let value = document.querySelector('.durationInp').value;
+            animationDuration.innerText = '';
+    
+            value === '' ? changeVar('--duration-anim', '0.6s') : changeVar('--duration-anim', `${value}s`);
+            value === '' ? animationDuration.innerText = '0.6s' : animationDuration.innerText = `${value}s`;
+            resetAnimation('squareShape');
+            resetAnimation('textAnimation');
+        };
+    
+        const changeTimmingFunction = e => {
+            let animationTransition = document.querySelector('.animationTransition');
+            let value = document.querySelector('.timmingFunctionInp').value;
+            animationTransition.innerText = '';
+    
+            changeVar('--transition-type', `${value}`);
+            animationTransition.innerText = `${value}`;
+            resetAnimation('squareShape');
+            resetAnimation('textAnimation');
+        };
+    
+        const changeDelay = e => {
+            let animationDelay = document.querySelector('.animationDelay');
+            let value = document.querySelector('.delayInp').value;
+            animationDelay.innerText = '';
+    
+            value === '' ? changeVar('--anim-delay', `0s`) : changeVar('--anim-delay', `${value}s`);
+            value === '' ? animationDelay.innerText = '0s' : animationDelay.innerText = `${value}s`;
+            resetAnimation('squareShape');
+            resetAnimation('textAnimation');
+        };
+    
+        const changeDirection = e => {
+            let animationDirection = document.querySelector('.animationDirection');
+            let value = document.querySelector('.directionInp').value;
+            animationDirection.innerText = '';
+    
+            changeVar('--anim-direction', `${value}`);
+            animationDirection.innerText = `${value}`;
+            resetAnimation('squareShape');
+            resetAnimation('textAnimation');
+        };
+    
+        const changeFillMode = e => {
+            let animationType = document.querySelector('.animationType');
+            let value = document.querySelector('.fillModeInp').value;
+            animationType.innerText = '';
+    
+            changeVar('--anim-type', `${value}`);
+            animationType.innerText = `${value}`;
+            resetAnimation('squareShape');
+            resetAnimation('textAnimation');
+        };
+    
+        const changeInfinite = e => {
+            let isInfinite = document.querySelector('.isInfinite');
+            let value = document.querySelector('.infiniteInp').checked;
+            isInfinite.innerText = '';
+    
+            value ? changeVar('--is-infinite', 'infinite') : changeVar('--is-infinite', '');
+            if(isInfinite !== null) value ? isInfinite.innerText = 'infinite' : isInfinite.innerText = '';
+        };
 
    return(
     <>
@@ -112,7 +130,7 @@ const Settings = () => {
        >
           <div className="w-full h-[3rem] px-[1rem] items-center flex bg-[white] rounded-[1rem]">
               <input
-              onChange={changeDuration} 
+              onChange={changeDuration}
               className="w-full h-full durationInp rounded-[1rem] pr-[.5rem]"
               type='number'
               placeholder="Duration"
@@ -122,8 +140,8 @@ const Settings = () => {
 
           <div className="w-full h-[3rem] px-[1rem] items-center flex bg-[white] rounded-[1rem]">
             <select
-            defaultValue={'DEFAULT'} 
             onChange={changeTimmingFunction}
+            defaultValue={'DEFAULT'}
             className="w-full h-full timmingFunctionInp rounded-[1rem]">
                 <option value="DEFAULT" disabled>Timming-function</option>
                 <option value='ease'>Ease</option>
@@ -146,7 +164,8 @@ const Settings = () => {
           <div className="w-full h-[3rem] px-[1rem] items-center flex bg-[white] rounded-[1rem]">
             <select 
             onChange={changeDirection}
-            defaultValue={'DEFAULT'} className="w-full directionInp h-full rounded-[1rem]">
+            defaultValue={'DEFAULT'} 
+            className="w-full directionInp h-full rounded-[1rem]">
                 <option value='DEFAULT' disabled>Direction</option>
                 <option value='normal'>Normal</option>
                 <option value='reverse'>Reverse</option>
@@ -158,7 +177,8 @@ const Settings = () => {
           <div className="w-full h-[3rem] px-[1rem] items-center flex bg-[white] rounded-[1rem]">
             <select 
             onChange={changeFillMode}
-            defaultValue={'DEFAULT'} className="w-full h-full fillModeInp rounded-[1rem]">
+            defaultValue={'DEFAULT'} 
+            className="w-full h-full fillModeInp rounded-[1rem]">
                 <option value='DEFAULT' disabled>Fill-mode</option>
                 <option value='forwards'>Forwards</option>
                 <option value='backwards'>Backwards</option>

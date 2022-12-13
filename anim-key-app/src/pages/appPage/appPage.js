@@ -35,6 +35,8 @@ import { ShadowBasic } from "../../components/AppPageComp/animationPages/animate
 import { ShadowInset } from "../../components/AppPageComp/animationPages/animate/AnimComp";
 import { Shadow3D } from "../../components/AppPageComp/animationPages/animate/AnimComp";
 
+import ShowCode from "../../components/animationCod/Code";
+
 const AppPage = () => {
 
     return(
@@ -44,6 +46,7 @@ const AppPage = () => {
            w-screen
            h-screen
            grid
+           relative
            grid-cols-1
            grid-rows-127
            "
@@ -113,6 +116,7 @@ const AppPage = () => {
                     <Route path="/shadows/inset" element={<ShadowInset />} />
                     <Route path="/shadows/3d" element={<Shadow3D />} />
                   </Routes>
+                  <ShowCode />
               </div>
            </div>
         </>

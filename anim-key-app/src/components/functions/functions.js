@@ -5,14 +5,7 @@ export function changeAnim(path, animClass) {
    
     //add anim class on window path change
     if(pathName === path) {
-      if(
-        path === '/appPage/text' ||
-        path === '/appPage/text/textTracking' ||
-        path === '/appPage/text/textBlur' ||
-        path === '/appPage/text/textShadow' ||
-        path === '/appPage/text/textPop-up' ||
-        path === '/appPage/text/textJello'
-      ) {
+      if(textAnimation !== null) {
         textAnimation.className = `
         w-max 
         h-max 
@@ -22,9 +15,9 @@ export function changeAnim(path, animClass) {
         text-white
         text-[5vmax] 
         ${animClass}`;
-        return;
       };
 
+      if(squareShape !== null) {
       squareShape.className = `
         w-[10vmax]
         h-[10vmax]
@@ -39,6 +32,7 @@ export function changeAnim(path, animClass) {
         bg-white
         ${animClass}`;
     };
+  };
 
 };
 

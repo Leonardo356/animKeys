@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+
 const AnimTemplate = props => {
 
     let containerClass = props.containerClass;
@@ -39,7 +40,6 @@ const AnimTemplate = props => {
         let animationBtn = document.querySelectorAll('.animationBtn');
         let squareShape = document.querySelector('.squareShape');
         let textAnimation = document.querySelector('.textAnimation');
-        let pathName = window.location.pathname;
         animationBtn[0].style.background = '#D1E9F0';
 
         // add and remove btn class animation on click
@@ -48,37 +48,13 @@ const AnimTemplate = props => {
                   if(!e.target.classList.contains('animationBtn')) return;
                   if(btn === e.target) {
                     btn.style.background = '#D1E9F0';
-
-                    if(
-                      pathName === '/appPage/text' ||
-                      pathName === '/appPage/text/textTracking' ||
-                      pathName === '/appPage/text/textBlur' ||
-                      pathName === '/appPage/text/textShadow' ||
-                      pathName === '/appPage/text/textPop-up' ||
-                      pathName === '/appPage/text/textJello'
-                    ) {
-                      textAnimation.classList.add(`${btn.innerText}`);
-                      return;
-                    }
-
-                    squareShape.classList.add(`${btn.innerText}`);
+                    if(textAnimation !== null) textAnimation.classList.add(`${btn.innerText}`);
+                    if(squareShape !== null) squareShape.classList.add(`${btn.innerText}`);
                   }
                   else {
                     btn.style.background = '';
-
-                    if(
-                      pathName === '/appPage/text' ||
-                      pathName === '/appPage/text/textTracking' ||
-                      pathName === '/appPage/text/textBlur' ||
-                      pathName === '/appPage/text/textShadow' ||
-                      pathName === '/appPage/text/textPop-up' ||
-                       pathName === '/appPage/text/textJello'
-                    ) {
-                      textAnimation.classList.remove(`${btn.innerText}`);
-                      return;
-                    };
-
-                    squareShape.classList.remove(`${btn.innerText}`);
+                    if(textAnimation !== null) textAnimation.classList.remove(`${btn.innerText}`);
+                    if(squareShape !== null) squareShape.classList.remove(`${btn.innerText}`);
                   };
 
             });
