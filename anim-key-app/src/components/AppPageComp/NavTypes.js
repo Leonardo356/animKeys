@@ -49,7 +49,6 @@ const NavTypes = () => {
     changeBtn('/appPage/shadows/inset', 'shadowsBtnOnNav');
     changeBtn('/appPage/shadows/3d', 'shadowsBtnOnNav');
 
-    changeBtn('/appPage/bonus', 'bonusBtnOnNav');
   }, [location]);
 
   let navigate = useNavigate();
@@ -58,7 +57,6 @@ const NavTypes = () => {
   const navigateToText = () => {navigate('/appPage/text')};
   const navigateToAttention = () => {navigate('/appPage/attention')};
   const navigateToShadows = () => {navigate('/appPage/shadows')};
-  const navigateToBonus = () => {navigate('/appPage/bonus')};
 
     return(
         <>
@@ -78,7 +76,6 @@ const NavTypes = () => {
               <div onClick={navigateToText} ><NavBtn class='textBtnOnNav' name='Text' /></div>
               <div onClick={navigateToAttention} ><NavBtn class='attentionBtnOnNav' name='Attention' /></div>
               <div onClick={navigateToShadows} ><NavBtn class='shadowsBtnOnNav' name='Shadows' /></div>
-              <div onClick={navigateToBonus} ><NavBtn class='bonusBtnOnNav' name='Bonus' /></div>
           </div>
         </>
     );

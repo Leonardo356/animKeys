@@ -48,22 +48,6 @@ const AnimTemplate = props => {
                   if(!e.target.classList.contains('animationBtn')) return;
                   if(btn === e.target) {
                     btn.style.background = '#D1E9F0';
-                    if(
-                      pathName === '/appPage/' ||
-                      pathName === '/appPage/basicRotate' ||
-                      pathName === '/appPage/basicFlip' ||
-                      pathName === '/appPage/basicSwing' ||
-                      pathName === '/appPage/basicSlide' ||
-                      pathName === '/appPage/basicShadow' ||
-                      pathName === '/appPage/attention' ||
-                      pathName === '/appPage/attention/Shake' ||
-                      pathName === '/appPage/attention/Bounce' ||
-                      pathName === '/appPage/attention/Pulsate' ||
-                      pathName === '/appPage/attention/Blink' ||
-                      pathName === '/appPage/shadows' ||
-                      pathName === '/appPage/shadows/inset' ||
-                      pathName === '/appPage/shadows/3d'
-                    ) squareShape.classList.add(`${btn.innerText}`);
 
                     if(
                       pathName === '/appPage/text' ||
@@ -72,26 +56,15 @@ const AnimTemplate = props => {
                       pathName === '/appPage/text/textShadow' ||
                       pathName === '/appPage/text/textPop-up' ||
                       pathName === '/appPage/text/textJello'
-                    ) textAnimation.classList.add(`${btn.innerText}`);
+                    ) {
+                      textAnimation.classList.add(`${btn.innerText}`);
+                      return;
+                    }
+
+                    squareShape.classList.add(`${btn.innerText}`);
                   }
                   else {
                     btn.style.background = '';
-                    if(
-                      pathName === '/appPage/' ||
-                      pathName === '/appPage/basicRotate' ||
-                      pathName === '/appPage/basicFlip' ||
-                      pathName === '/appPage/basicSwing' ||
-                      pathName === '/appPage/basicSlide' ||
-                      pathName === '/appPage/basicShadow' ||
-                      pathName === '/appPage/attention' ||
-                      pathName === '/appPage/attention/Shake' ||
-                      pathName === '/appPage/attention/Bounce' ||
-                      pathName === '/appPage/attention/Pulsate' ||
-                      pathName === '/appPage/attention/Blink' ||
-                      pathName === '/appPage/shadows' ||
-                      pathName === '/appPage/shadows/inset' ||
-                      pathName === '/appPage/shadows/3d'
-                    ) squareShape.classList.remove(`${btn.innerText}`);
 
                     if(
                       pathName === '/appPage/text' ||
@@ -100,7 +73,12 @@ const AnimTemplate = props => {
                       pathName === '/appPage/text/textShadow' ||
                       pathName === '/appPage/text/textPop-up' ||
                        pathName === '/appPage/text/textJello'
-                    ) textAnimation.classList.remove(`${btn.innerText}`);
+                    ) {
+                      textAnimation.classList.remove(`${btn.innerText}`);
+                      return;
+                    };
+
+                    squareShape.classList.remove(`${btn.innerText}`);
                   };
 
             });

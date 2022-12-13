@@ -6,38 +6,6 @@ export function changeAnim(path, animClass) {
     //add anim class on window path change
     if(pathName === path) {
       if(
-        path === '/appPage/' ||
-        path === '/appPage/basicRotate' ||
-        path === '/appPage/basicFlip' ||
-        path === '/appPage/basicSwing' ||
-        path === '/appPage/basicSlide' ||
-        path === '/appPage/basicShadow' ||
-        path === '/appPage/attention' ||
-        path === '/appPage/attention/Shake' ||
-        path === '/appPage/attention/Bounce' ||
-        path === '/appPage/attention/Pulsate' ||
-        path === '/appPage/attention/Blink' ||
-        path === '/appPage/shadows' ||
-        path === '/appPage/shadows/inset' ||
-        path === '/appPage/shadows/3d'
-      ) {
-        squareShape.className = `
-        w-[10vmax]
-        h-[10vmax]
-        rounded-[1rem]
-        squareShape
-        text-txtColor2
-        font-bold
-        text-[10vmax]
-        flex
-        justify-center
-        items-center
-        bg-white
-        ${animClass}
-       `
-      };
-
-      if(
         path === '/appPage/text' ||
         path === '/appPage/text/textTracking' ||
         path === '/appPage/text/textBlur' ||
@@ -54,7 +22,22 @@ export function changeAnim(path, animClass) {
         text-white
         text-[5vmax] 
         ${animClass}`;
+        return;
       };
+
+      squareShape.className = `
+        w-[10vmax]
+        h-[10vmax]
+        rounded-[1rem]
+        squareShape
+        text-txtColor2
+        font-bold
+        text-[10vmax]
+        flex
+        justify-center
+        items-center
+        bg-white
+        ${animClass}`;
     };
 
 };
@@ -75,7 +58,7 @@ export function changeBtn(path, parentTarget) {
         else {
           btn.classList.remove('w-full', 'h-full');
           btn.classList.add('w-0', 'h-0');
-        }
+        };
       });
     };
 };

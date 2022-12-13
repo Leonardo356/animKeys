@@ -6,7 +6,6 @@ import NavAnim from "../../components/AppPageComp/NavAnim/NavAnim";
 import NavAnimTxt from "../../components/AppPageComp/NavAnim/NavAnimTxt";
 import NavAnimAttention from "../../components/AppPageComp/NavAnim/NavAnimAttention";
 import NavAnimShadows from "../../components/AppPageComp/NavAnim/NavAnimShadow";
-import NavAnimBonus from "../../components/AppPageComp/NavAnim/NavAnimBonus";
 
 import AnimShapes from "../../components/AppPageComp/animationPages/AnimShapes";
 
@@ -76,7 +75,6 @@ const AppPage = () => {
                     <Route path="/text/*" element={<NavAnimTxt />} />
                     <Route path="/attention/*" element={<NavAnimAttention />} />
                     <Route path="/shadows/*" element={<NavAnimShadows />} />
-                    <Route path="/bonus/*" element={<NavAnimBonus />} />
                   </Routes>
               </div>
 
