@@ -1,10 +1,21 @@
+const getAnimationName = el => {
+  let animName = el.getAnimations()[0].animationName;
+  return animName;
+}
+
 export function changeAnim(path, animClass) {
     let pathName = window.location.pathname;
     let squareShape = document.querySelector('.squareShape');
-    let textAnimation = document.querySelector('.textAnimation')
+    let textAnimation = document.querySelector('.textAnimation');
+    let animationClass = document.querySelector('.animationClass');
+    let animationName = document.querySelector('.animationName');
    
     //add anim class on window path change
     if(pathName === path) {
+
+      animationClass.innerText = '';
+      animationClass.innerText = animClass;
+
       if(textAnimation !== null) {
         textAnimation.className = `
         w-max 
@@ -15,6 +26,9 @@ export function changeAnim(path, animClass) {
         text-white
         text-[5vmax] 
         ${animClass}`;
+
+        animationName.innerText = '' ;
+        animationName.innerText = getAnimationName(textAnimation);
       };
 
       if(squareShape !== null) {
@@ -31,6 +45,8 @@ export function changeAnim(path, animClass) {
         items-center
         bg-white
         ${animClass}`;
+        animationName.innerText = '' ;
+        animationName.innerText = getAnimationName(squareShape);
     };
   };
 

@@ -63,6 +63,7 @@ const ShowCode = () => {
 };
 
 const CodeContainer = props => {
+
     return(
         <>
            <div className="
@@ -72,7 +73,9 @@ const CodeContainer = props => {
            flex
            flex-col
            justify-center
-           items-center
+           gap-[2rem]
+           items-start
+           pl-[1rem]
            ">
                <ClassAnim />
            </div>
@@ -81,6 +84,7 @@ const CodeContainer = props => {
 };
 
 const ClassAnim = () => {
+
     return(
         <>
           <div className="
@@ -93,7 +97,7 @@ const ClassAnim = () => {
           rounded-[.5rem]
           shadow-sh1
           ">
-            <p>.<span className="animationClass">exClass&nbsp;</span>{'{'}</p>
+            <p>.<span className="animationClass">scale-up-center</span>&nbsp;{'{'}</p>
             <div className="flex">
                 <p className="pl-[1rem]">animation:&nbsp;
                 <span className="animationName">animName</span>&nbsp;

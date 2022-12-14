@@ -13,29 +13,29 @@ const NavAnim = () => {
 
     useEffect(() => {
 
-      changeAnim('/appPage/', 'scale-up-center');
-      changeAnim('/appPage/basicRotate', 'rotate-center');
-      changeAnim('/appPage/basicFlip', 'flip-hor-bottom');
-      changeAnim('/appPage/basicSwing', 'swing-top-fwd');
-      changeAnim('/appPage/basicSlide', 'slide-top');
-      changeAnim('/appPage/basicShadow', 'shadow-top');
+      changeAnim('/appPage/basic/basicScale/scale-up-center', 'scale-up-center');
+      changeAnim('/appPage/basic/basicRotate/rotate-center', 'rotate-center');
+      changeAnim('/appPage/basic/basicFlip/flip-hor-bottom', 'flip-hor-bottom');
+      changeAnim('/appPage/basic/basicSwing/swing-top-fwd', 'swing-top-fwd');
+      changeAnim('/appPage/basic/basicSlide/slide-top', 'slide-top');
+      changeAnim('/appPage/basic/basicShadow/shadow-top', 'shadow-top');
   
-      changeBtn('/appPage/', 'scaleParentBasic');
-      changeBtn('/appPage/basicRotate', 'rotateParentBasic');
-      changeBtn('/appPage/basicFlip', 'flipParentBasic');
-      changeBtn('/appPage/basicSwing', 'swingParentBasic');
-      changeBtn('/appPage/basicSlide', 'slideParentBasic');
-      changeBtn('/appPage/basicShadow', 'shadowParentBasic');
+      changeBtn('/appPage/basic/basicScale/scale-up-center', 'scaleParentBasic');
+      changeBtn('/appPage/basic/basicRotate/rotate-center', 'rotateParentBasic');
+      changeBtn('/appPage/basic/basicFlip/flip-hor-bottom', 'flipParentBasic');
+      changeBtn('/appPage/basic/basicSwing/swing-top-fwd', 'swingParentBasic');
+      changeBtn('/appPage/basic/basicSlide/slide-top', 'slideParentBasic');
+      changeBtn('/appPage/basic/basicShadow/shadow-top', 'shadowParentBasic');
     }, [location]);
   
     let navigate = useNavigate();
   
-    const navigateToBasicScale = () => {navigate('/appPage/')};
-    const navigateToBasicRotate = () => {navigate('/appPage/basicRotate')};
-    const navigateToBasicFlip = () => {navigate('/appPage/basicFlip')};
-    const navigateToBasicSwing = () => {navigate('/appPage/basicSwing')};
-    const navigateToBasicSlide = () => {navigate('/appPage/basicSlide')};
-    const navigateToBasicShadow = () => {navigate('/appPage/basicShadow')};
+    const navigateToBasicScale = () => {navigate('/appPage/basic/basicScale/scale-up-center')};
+    const navigateToBasicRotate = () => {navigate('/appPage/basic/basicRotate/rotate-center')};
+    const navigateToBasicFlip = () => {navigate('/appPage/basic/basicFlip/flip-hor-bottom')};
+    const navigateToBasicSwing = () => {navigate('/appPage/basic/basicSwing/swing-top-fwd')};
+    const navigateToBasicSlide = () => {navigate('/appPage/basic/basicSlide/slide-top')};
+    const navigateToBasicShadow = () => {navigate('/appPage/basic/basicShadow/shadow-top')};
 
     return(
         <>

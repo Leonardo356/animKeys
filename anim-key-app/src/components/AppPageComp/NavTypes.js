@@ -23,21 +23,21 @@ const NavTypes = () => {
     };
 
     //select nav btn on window path change
-    changeBtn('/appPage/', 'basicBtnOnNav');
+    changeBtn('/appPage/basic/basicScale/scale-up-center', 'basicBtnOnNav');
     changeBtn('/appPage/basicRotate', 'basicBtnOnNav');
     changeBtn('/appPage/basicFlip', 'basicBtnOnNav');
     changeBtn('/appPage/basicSwing', 'basicBtnOnNav');
     changeBtn('/appPage/basicSlide', 'basicBtnOnNav');
     changeBtn('/appPage/basicShadow', 'basicBtnOnNav');
 
-    changeBtn('/appPage/text', 'textBtnOnNav');
+    changeBtn('/appPage/text/textScale/scale-in-center', 'textBtnOnNav');
     changeBtn('/appPage/text/textTracking', 'textBtnOnNav');
     changeBtn('/appPage/text/textBlur', 'textBtnOnNav');
     changeBtn('/appPage/text/textShadow', 'textBtnOnNav');
     changeBtn('/appPage/text/textPop-up', 'textBtnOnNav');
     changeBtn('/appPage/text/textJello', 'textBtnOnNav');
 
-    changeBtn('/appPage/attention', 'attentionBtnOnNav');
+    changeBtn('/appPage/attention/Vibrate/vibrate-1', 'attentionBtnOnNav');
     changeBtn('/appPage/attention/Shake', 'attentionBtnOnNav');
     changeBtn('/appPage/attention/Jello', 'attentionBtnOnNav');
     changeBtn('/appPage/attention/Wobble', 'attentionBtnOnNav');
@@ -53,9 +53,9 @@ const NavTypes = () => {
 
   let navigate = useNavigate();
 
-  const navigateToBasic = () => {navigate('/appPage/')};
-  const navigateToText = () => {navigate('/appPage/text')};
-  const navigateToAttention = () => {navigate('/appPage/attention')};
+  const navigateToBasic = () => {navigate('/appPage/basic/basicScale/scale-up-center')};
+  const navigateToText = () => {navigate('/appPage/text/textScale/scale-in-center')};
+  const navigateToAttention = () => {navigate('/appPage/attention/Vibrate/vibrate-1')};
   const navigateToShadows = () => {navigate('/appPage/shadows')};
 
     return(

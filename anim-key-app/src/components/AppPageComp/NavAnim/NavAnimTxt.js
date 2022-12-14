@@ -13,29 +13,29 @@ const NavAnimTxt = () => {
     const location = useLocation();
 
     useEffect(() => {
-        changeBtn('/appPage/text', "scaleParentText");
-        changeBtn('/appPage/text/textTracking', "trackingParentText");
-        changeBtn('/appPage/text/textBlur', "blurParentText");
-        changeBtn('/appPage/text/textShadow', "shadowParentText");
-        changeBtn('/appPage/text/textPop-up', "popUpParentText");
-        changeBtn('/appPage/text/textJello', "jelloParentText");
+        changeBtn('/appPage/text/textScale/scale-in-center', "scaleParentText");
+        changeBtn('/appPage/text/textTracking/tracking-in-expand', "trackingParentText");
+        changeBtn('/appPage/text/textBlur/focus-in', "blurParentText");
+        changeBtn('/appPage/text/textShadow/text-shd-center', "shadowParentText");
+        changeBtn('/appPage/text/textPop-up/text-pop-up-top', "popUpParentText");
+        changeBtn('/appPage/text/textJello/text-jello-x', "jelloParentText");
 
-        changeAnim('/appPage/text', 'scale-in-center');
-        changeAnim('/appPage/text/textTracking', 'tracking-in-expand');
-        changeAnim('/appPage/text/textBlur', 'focus-in');
-        changeAnim('/appPage/text/textShadow', 'text-shd-center');
-        changeAnim('/appPage/text/textPop-up', 'text-pop-up-top');
-        changeAnim('/appPage/text/textJello', 'text-jello-x');
+        changeAnim('/appPage/text/textScale/scale-in-center', 'scale-in-center');
+        changeAnim('/appPage/text/textTracking/tracking-in-expand', 'tracking-in-expand');
+        changeAnim('/appPage/text/textBlur/focus-in', 'focus-in');
+        changeAnim('/appPage/text/textShadow/text-shd-center', 'text-shd-center');
+        changeAnim('/appPage/text/textPop-up/text-pop-up-top', 'text-pop-up-top');
+        changeAnim('/appPage/text/textJello/text-jello-x', 'text-jello-x');
     }, [location]);
 
     let navigate = useNavigate();
 
-    const goToTextScale = () => navigate('/appPage/text');
-    const goToTextTracking = () => navigate('/appPage/text/textTracking');
-    const goToTextBlur = () => navigate('/appPage/text/textBlur');
-    const goToTextShadow = () => navigate('/appPage/text/textShadow');
-    const goToTextPopUp = () => navigate('/appPage/text/textPop-up');
-    const goToTextJello = () => navigate('/appPage/text/textJello');
+    const goToTextScale = () => navigate('/appPage/text/textScale/scale-in-center');
+    const goToTextTracking = () => navigate('/appPage/text/textTracking/tracking-in-expand');
+    const goToTextBlur = () => navigate('/appPage/text/textBlur/focus-in');
+    const goToTextShadow = () => navigate('/appPage/text/textShadow/text-shd-center');
+    const goToTextPopUp = () => navigate('/appPage/text/textPop-up/text-pop-up-top');
+    const goToTextJello = () => navigate('/appPage/text/textJello/text-jello-x');
 
     return(
         <>

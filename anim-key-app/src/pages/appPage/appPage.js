@@ -95,26 +95,29 @@ const AppPage = () => {
                   <AnimShapes />
                   <AnimSettings />
                   <Routes >
-                    <Route path="/" element={<BasicScale />} />
-                    <Route path="/basicRotate" element={<BasicRotate />} />
-                    <Route path="/basicFlip" element={<BasicFlip />} />
-                    <Route path="/basicSwing" element={<BasicSwing />} />
-                    <Route path="/basicSlide" element={<BasicSlide />} />
-                    <Route path="/basicShadow" element={<BasicShadow />} />
-                    <Route path="/text" element={<TextScale />} />
-                    <Route path="/text/textTracking" element={<TextTracking />} />
-                    <Route path="/text/textBlur" element={<TextBlur />} />
-                    <Route path="/text/textShadow" element={<TextShadow />} />
-                    <Route path="/text/textPop-up" element={<TextPopUp />} />
-                    <Route path="/text/textJello" element={<TextJello />} />
-                    <Route path="/attention" element={<AttentionVibrate />} />
-                    <Route path="/attention/Shake" element={<AttentionShake />} />
-                    <Route path="/attention/Bounce" element={<AttentionBounce />} />
-                    <Route path="/attention/Pulsate" element={<AttentionPulsate />} />
-                    <Route path="/attention/Blink" element={<AttentionBlink />} />
-                    <Route path="/shadows" element={<ShadowBasic />} />
-                    <Route path="/shadows/inset" element={<ShadowInset />} />
-                    <Route path="/shadows/3d" element={<Shadow3D />} />
+                    <Route path="/basic/basicScale/*" element={<BasicScale />} />
+                    <Route path="/basic/basicRotate/*" element={<BasicRotate />} />
+                    <Route path="/basic/basicFlip/*" element={<BasicFlip />} />
+                    <Route path="/basic/basicSwing/*" element={<BasicSwing />} />
+                    <Route path="/basic/basicSlide/*" element={<BasicSlide />} />
+                    <Route path="/basic/basicShadow/*" element={<BasicShadow />} />
+
+                    <Route path="/text/textScale/*" element={<TextScale />} />
+                    <Route path="/text/textTracking/*" element={<TextTracking />} />
+                    <Route path="/text/textBlur/*" element={<TextBlur />} />
+                    <Route path="/text/textShadow/*" element={<TextShadow />} />
+                    <Route path="/text/textPop-up/*" element={<TextPopUp />} />
+                    <Route path="/text/textJello/*" element={<TextJello />} />
+
+                    <Route path="/attention/Vibrate/*" element={<AttentionVibrate />} />
+                    <Route path="/attention/Shake/*" element={<AttentionShake />} />
+                    <Route path="/attention/Bounce/*" element={<AttentionBounce />} />
+                    <Route path="/attention/Pulsate/*" element={<AttentionPulsate />} />
+                    <Route path="/attention/Blink/*" element={<AttentionBlink />} />
+
+                    <Route path="/shadows/*" element={<ShadowBasic />} />
+                    <Route path="/shadows/inset/*" element={<ShadowInset />} />
+                    <Route path="/shadows/3d/*" element={<Shadow3D />} />
                   </Routes>
                   <ShowCode />
               </div>

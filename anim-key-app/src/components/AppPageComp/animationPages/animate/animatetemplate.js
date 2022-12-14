@@ -1,11 +1,17 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AnimTemplate = props => {
 
     let containerClass = props.containerClass;
     let titles = props.titles;
+    let navigate = useNavigate();
 
     useEffect(() => {
+
+      window.onload = () => {
+        console.log('we are here')
+      }
         
         let contAnimTemplate = document.querySelector(`.${containerClass}`)
         contAnimTemplate.innerHTML = '';
@@ -37,22 +43,43 @@ const AnimTemplate = props => {
             contAnimTemplate.appendChild(el);
         });
 
+        const getAnimationName = el => {
+          let animName = el.getAnimations()[0].animationName;
+          return animName;
+        }
+
         let animationBtn = document.querySelectorAll('.animationBtn');
         let squareShape = document.querySelector('.squareShape');
         let textAnimation = document.querySelector('.textAnimation');
-        animationBtn[0].style.background = '#D1E9F0';
+        let animationClass = document.querySelector('.animationClass');
+        let animationName = document.querySelector('.animationName');
 
         // add and remove btn class animation on click
         window.addEventListener('click', e => {
+          e.preventDefault();
             animationBtn.forEach(btn => {
                   if(!e.target.classList.contains('animationBtn')) return;
                   if(btn === e.target) {
-                    btn.style.background = '#D1E9F0';
-                    if(textAnimation !== null) textAnimation.classList.add(`${btn.innerText}`);
-                    if(squareShape !== null) squareShape.classList.add(`${btn.innerText}`);
+                    navigate(btn.innerText);
+                    btn.classList.add('bg-[lightblue]');
+
+                    animationClass.innerText = '';
+                    animationClass.innerText = btn.innerText;
+
+                    if(textAnimation !== null) {
+                      textAnimation.classList.add(`${btn.innerText}`);
+                      animationName.innerText = '' ;
+                      animationName.innerText = getAnimationName(textAnimation);
+                    }
+
+                    if(squareShape !== null) {
+                      squareShape.classList.add(`${btn.innerText}`);
+                      animationName.innerText = '' ;
+                      animationName.innerText = getAnimationName(squareShape);
+                    }
                   }
                   else {
-                    btn.style.background = '';
+                    btn.classList.remove('bg-[lightblue]');
                     if(textAnimation !== null) textAnimation.classList.remove(`${btn.innerText}`);
                     if(squareShape !== null) squareShape.classList.remove(`${btn.innerText}`);
                   };
@@ -60,7 +87,7 @@ const AnimTemplate = props => {
             });
         });
 
-    }, [containerClass, titles]);
+    }, [containerClass, titles, navigate]);
 
     return(
         <>
@@ -78,7 +105,8 @@ const AnimTemplate = props => {
           rounded-[.5rem]
           flex
           `}>  
-              <div className={`${props.containerClass} flex gap-[1rem] flex-col w-full h-max p-[1rem]`}>
+              <div
+              className={`${props.containerClass} flex gap-[1rem] flex-col w-full h-max p-[1rem]`}>
 
               </div>
           </div>

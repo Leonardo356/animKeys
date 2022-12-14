@@ -5,23 +5,23 @@ const AnimSettings = () => {
     return(
         <>    
           <Routes >
-                    <Route path="/" element={<Settings />} />
-                    <Route path="/basicRotate" element={<Settings />} />
-                    <Route path="/basicFlip" element={<Settings />} />
-                    <Route path="/basicSwing" element={<Settings />} />
-                    <Route path="/basicSlide" element={<Settings />} />
-                    <Route path="/basicShadow" element={<Settings />} />
-                    <Route path="/text" element={<Settings />} />
-                    <Route path="/text/textTracking" element={<Settings />} />
-                    <Route path="/text/textBlur" element={<Settings />} />
-                    <Route path="/text/textShadow" element={<Settings />} />
-                    <Route path="/text/textPop-up" element={<Settings />} />
-                    <Route path="/text/textJello" element={<Settings />} />
-                    <Route path="/attention" element={<Settings />} />
-                    <Route path="/attention/Shake" element={<Settings />} />
-                    <Route path="/attention/Bounce" element={<Settings />} />
-                    <Route path="/attention/Pulsate" element={<Settings />} />
-                    <Route path="/attention/Blink" element={<Settings />} />
+                    <Route path="/*" element={<Settings />} />
+                    <Route path="/basicRotate/*" element={<Settings />} />
+                    <Route path="/basicFlip/*" element={<Settings />} />
+                    <Route path="/basicSwing/*" element={<Settings />} />
+                    <Route path="/basicSlide/*" element={<Settings />} />
+                    <Route path="/basicShadow/*" element={<Settings />} />
+                    <Route path="/text/*" element={<Settings />} />
+                    <Route path="/text/textTracking/*" element={<Settings />} />
+                    <Route path="/text/textBlur/*" element={<Settings />} />
+                    <Route path="/text/textShadow/*" element={<Settings />} />
+                    <Route path="/text/textPop-up/*" element={<Settings />} />
+                    <Route path="/text/textJello/*" element={<Settings />} />
+                    <Route path="/attention/*" element={<Settings />} />
+                    <Route path="/attention/Shake/*" element={<Settings />} />
+                    <Route path="/attention/Bounce/*" element={<Settings />} />
+                    <Route path="/attention/Pulsate/*" element={<Settings />} />
+                    <Route path="/attention/Blink/*" element={<Settings />} />
                   </Routes>
         </>
     );
