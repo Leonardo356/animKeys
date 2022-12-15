@@ -40,7 +40,7 @@ export function BasicSwing() {
         <>
            <AnimTemplate
             containerClass='basicScaleCont'
-            titles={`swing-top-fwd swing-top-bck swing-tr-fwd swing-tr-bck swing-right-fwd swing-right-bck swing-br-fwd swing-br-bck swing-bottom-fwd swing-bottom-bck swing-bl-fwd swhing-bl-bck swing-left-fwd swing-left-bck swing-tl-fwd swing-tl-bck`}
+            titles={`swing-top-fwd swing-top-bck swing-tr-fwd swing-tr-bck swing-right-fwd swing-right-bck swing-br-fwd swing-br-bck swing-bottom-fwd swing-bottom-bck swing-bl-fwd swing-bl-bck swing-left-fwd swing-left-bck swing-tl-fwd swing-tl-bck`}
            />
         </>
     );
@@ -62,7 +62,7 @@ export function BasicShadow() {
         <>
            <AnimTemplate
             containerClass='basicScaleCont'
-            titles={`shadow-top shadow-tr shadow-right shadow-br shadow-bottom shadow-bl shadow-left shadow-tl shadow-tr-pop shadow-br-pop shadow-bl-pop shadow-tl-pop shadow-1 shadow-2 shadow-3 shadow-4`}
+            titles={`shadow-top shadow-tr shadow-right shadow-br shadow-bottom shadow-bl shadow-left shadow-tl shadow-tr-pop shadow-br-pop shadow-bl-pop shadow-tl-pop shadow-a shadow-b shadow-c shadow-d`}
            />
         </>
     );
@@ -117,7 +117,7 @@ export function TextJello() {
     return(
         <AnimTemplate
          containerClass='textScaleCont'
-         titles={'text-jello-x text-jello-y text-jello-diag-1 text-jello-diag-2'}
+         titles={'text-jello-x text-jello-y text-jello-diag-a text-jello-diag-b'}
         />
     );
 };
@@ -126,7 +126,7 @@ export function AttentionVibrate() {
     return(
         <AnimTemplate
          containerClass='atScaleCont'
-         titles={'vibrate-1 vibrate-2 vibrate-3'}
+         titles={'vibrate-a vibrate-b vibrate-c'}
         />
     );
 };
@@ -153,7 +153,7 @@ export function AttentionPulsate() {
     return(
         <AnimTemplate
          containerClass='atScaleCont'
-         titles={'pulsate-1 pulsate-2 pulsate-3 pulsate-4'}
+         titles={'pulsate-a pulsate-b pulsate-c pulsate-d'}
         />
     );
 };
@@ -162,34 +162,7 @@ export function AttentionBlink() {
     return(
         <AnimTemplate
          containerClass='atScaleCont'
-         titles={'blink-1 blink-2'}
-        />
-    );
-};
-
-export function ShadowBasic() {
-    return(
-        <AnimTemplate
-         containerClass='shadowCont'
-         titles={'shadow-bs-1 shadow-bs-2 shadow-bs-3 shadow-bs-4 shadow-bs-5 shadow-bs-6 shadow-bs-7 shadow-bs-8 shadow-bs-9 shadow-bs-10 shadow-bs-11 shadow-bs-12'}
-        />
-    );
-};
-
-export function ShadowInset() {
-    return(
-        <AnimTemplate
-         containerClass='shadowCont'
-         titles={'shadow-ins-1 shadow-ins-2 shadow-ins-3 shadow-ins-4 shadow-ins-5 shadow-ins-6'}
-        />
-    );
-};
-
-export function Shadow3D() {
-    return(
-        <AnimTemplate
-         containerClass='shadowCont'
-         titles={'shadow-3d-1 shadow-3d-2 shadow-3d-3'}
+         titles={'blink-a blink-b'}
         />
     );
 };

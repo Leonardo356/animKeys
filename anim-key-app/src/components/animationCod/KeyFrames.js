@@ -2,7 +2,7 @@ import React from "react";
 export function ScaleUpCenter() {
     return(
         <>
-          <pre className="w-max ScaleUpCenter h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max  p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleUpCenter {
   from { transform: scale(0.2); }
   to {transform: scale(1);}
@@ -15,7 +15,7 @@ export function ScaleUpCenter() {
 export function ScaleUpTop() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max  p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleUpTop {
     from { 
         transform: scale(0.2); 
@@ -34,7 +34,7 @@ export function ScaleUpTop() {
 export function ScaleUpLeft() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleUpLeft {
     from { 
         transform: scale(0.2); 
@@ -53,7 +53,7 @@ export function ScaleUpLeft() {
 export function ScaleUpRight() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleUpRight {
     from { 
         transform: scale(0.2); 
@@ -72,7 +72,7 @@ export function ScaleUpRight() {
 export function ScaleUpBottom() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleUpBottom {
     from { 
         transform: scale(0.2); 
@@ -91,7 +91,7 @@ export function ScaleUpBottom() {
 export function ScaleUpTL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleUpTL {
     from { 
         transform: scale(0.2); 
@@ -110,7 +110,7 @@ export function ScaleUpTL() {
 export function ScaleUpTR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleUpTR {
     from { 
         transform: scale(0.2); 
@@ -129,7 +129,7 @@ export function ScaleUpTR() {
 export function ScaleUpBL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleUpBL {
     from { 
         transform: scale(0.2); 
@@ -148,7 +148,7 @@ export function ScaleUpBL() {
 export function ScaleUpBR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleUpBR {
     from { 
         transform: scale(0.2); 
@@ -167,7 +167,7 @@ export function ScaleUpBR() {
 export function ScaleWHUpCenter() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleWHUpCenter {
     from { 
         transform: scaleX(0.2);
@@ -183,10 +183,10 @@ export function ScaleWHUpCenter() {
     );
 };
 
-export function scaleWHUpTop() {
+export function ScaleWHUpTop() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleWHUpTop {
     from { 
         transform: scaleY(0.2);
@@ -202,10 +202,10 @@ export function scaleWHUpTop() {
     );
 };
 
-export function scaleWHUpRight() {
+export function ScaleWHUpRight() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleWHUpRight {
     from { 
         transform: scaleX(0.2);
@@ -221,10 +221,10 @@ export function scaleWHUpRight() {
     );
 };
 
-export function scaleWHUpLeft() {
+export function ScaleWHUpLeft() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleWHUpLeft {
     from { 
         transform: scaleX(0.2);
@@ -240,10 +240,10 @@ export function scaleWHUpLeft() {
     );
 };
 
-export function scaleWHUpBottom() {
+export function ScaleWHUpBottom() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleWHUpBottom {
     from { 
         transform: scaleY(0.2);
@@ -259,10 +259,10 @@ export function scaleWHUpBottom() {
     );
 };
 
-export function scaleDownCenter() {
+export function ScaleDownCenter() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleDownCenter {
     from { transform: scale(1); }
     to {transform: scale(0.2);}
@@ -272,10 +272,10 @@ export function scaleDownCenter() {
     );
 };
 
-export function scaleDownTop() {
+export function ScaleDownTop() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleDownTop {
     from { 
         transform: scale(1); 
@@ -291,10 +291,10 @@ export function scaleDownTop() {
     );
 };
 
-export function scaleDownLeft() {
+export function ScaleDownLeft() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleDownLeft {
     from { 
         transform: scale(1); 
@@ -310,10 +310,10 @@ export function scaleDownLeft() {
     );
 };
 
-export function scaleDownRight() {
+export function ScaleDownRight() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleDownRight {
     from { 
         transform: scale(1); 
@@ -329,10 +329,10 @@ export function scaleDownRight() {
     );
 };
 
-export function scaleDownBottom() {
+export function ScaleDownBottom() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleDownBottom {
     from { 
         transform: scale(1); 
@@ -348,10 +348,10 @@ export function scaleDownBottom() {
     );
 };
 
-export function scaleDownTL() {
+export function ScaleDownTL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleDownTL {
     from { 
         transform: scale(1); 
@@ -367,10 +367,10 @@ export function scaleDownTL() {
     );
 };
 
-export function scaleDownTR() {
+export function ScaleDownTR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleDownTR {
     from { 
         transform: scale(1); 
@@ -386,10 +386,10 @@ export function scaleDownTR() {
     );
 };
 
-export function scaleDownBL() {
+export function ScaleDownBL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleDownBL {
     from { 
         transform: scale(1); 
@@ -405,10 +405,10 @@ export function scaleDownBL() {
     );
 };
 
-export function scaleDownBR() {
+export function ScaleDownBR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleDownBR {
     from { 
         transform: scale(1); 
@@ -424,10 +424,10 @@ export function scaleDownBR() {
     );
 };
 
-export function scaleWHDownCenter() {
+export function ScaleWHDownCenter() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleWHDownCenter {
     from { 
         transform: scaleX(1);
@@ -443,10 +443,10 @@ export function scaleWHDownCenter() {
     );
 };
 
-export function scaleWHDownTop() {
+export function ScaleWHDownTop() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleWHDownTop {
     from { 
         transform: scaleY(1);
@@ -462,10 +462,10 @@ export function scaleWHDownTop() {
     );
 };
 
-export function scaleWHDownRight() {
+export function ScaleWHDownRight() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleWHDownRight {
     from { 
         transform: scaleX(1);
@@ -481,10 +481,10 @@ export function scaleWHDownRight() {
     );
 };
 
-export function scaleWHDownLeft() {
+export function ScaleWHDownLeft() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleWHDownLeft {
     from { 
         transform: scaleX(1);
@@ -500,10 +500,10 @@ export function scaleWHDownLeft() {
     );
 };
 
-export function scaleWHDownBottom() {
+export function ScaleWHDownBottom() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleWHDownBottom {
     from { 
         transform: scaleY(1);
@@ -520,10 +520,10 @@ export function scaleWHDownBottom() {
 };
 
 
-export function rotateCenter() {
+export function RotateCenter() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateCenter {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
@@ -533,10 +533,10 @@ export function rotateCenter() {
     );
 };
 
-export function rotateTop() {
+export function RotateTop() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateTop {
     from {
         transform: rotate(0deg);
@@ -552,10 +552,10 @@ export function rotateTop() {
     );
 };
 
-export function rotateLeft() {
+export function RotateLeft() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateLeft {
     from {
         transform: rotate(0deg);
@@ -571,10 +571,10 @@ export function rotateLeft() {
     );
 };
 
-export function rotateRight() {
+export function RotateRight() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateRight {
     from {
         transform: rotate(0deg);
@@ -590,10 +590,10 @@ export function rotateRight() {
     );
 };
 
-export function rotateBottom() {
+export function RotateBottom() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateBottom {
     from {
         transform: rotate(0deg);
@@ -609,10 +609,10 @@ export function rotateBottom() {
     );
 };
 
-export function rotateTL() {
+export function RotateTL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateTL {
     from {
         transform: rotate(0deg);
@@ -628,10 +628,10 @@ export function rotateTL() {
     );
 };
 
-export function rotateTR() {
+export function RotateTR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateTR {
     from {
         transform: rotate(0deg);
@@ -647,10 +647,10 @@ export function rotateTR() {
     );
 };
 
-export function rotateBR() {
+export function RotateBR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateBR {
     from {
         transform: rotate(0deg);
@@ -666,10 +666,10 @@ export function rotateBR() {
     );
 };
 
-export function rotateBL() {
+export function RotateBL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateBL {
     from {
         transform: rotate(0deg);
@@ -685,10 +685,10 @@ export function rotateBL() {
     );
 };
 
-export function rotateCenterUP() {
+export function RotateCenterUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateCenterUP {
     from {transform: rotate(0deg) scale(0.2);}
     to {transform: rotate(360deg) scale(1);}
@@ -698,10 +698,10 @@ export function rotateCenterUP() {
     );
 };
 
-export function rotateTopUP() {
+export function RotateTopUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateTopUP {
     from {
         transform: rotate(0deg) scale(0.2);
@@ -717,10 +717,10 @@ export function rotateTopUP() {
     );
 };
 
-export function rotateLeftUP() {
+export function RotateLeftUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateLeftUP {
     from {
         transform: rotate(0deg) scale(0.2);
@@ -736,10 +736,10 @@ export function rotateLeftUP() {
     );
 };
 
-export function rotateRightUP() {
+export function RotateRightUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateRightUP {
     from {
         transform: rotate(0deg) scale(0.2);
@@ -755,10 +755,10 @@ export function rotateRightUP() {
     );
 };
 
-export function rotateBottomUP() {
+export function RotateBottomUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateBottomUP {
     from {
         transform: rotate(0deg) scale(0.2);
@@ -774,10 +774,10 @@ export function rotateBottomUP() {
     );
 };
 
-export function rotateTLUP() {
+export function RotateTLUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateTLUP {
     from {
         transform: rotate(0deg) scale(0.2);
@@ -793,10 +793,10 @@ export function rotateTLUP() {
     );
 };
 
-export function rotateTRUP() {
+export function RotateTRUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateTRUP {
     from {
         transform: rotate(0deg) scale(0.2);
@@ -812,10 +812,10 @@ export function rotateTRUP() {
     );
 };
 
-export function rotateBRUP() {
+export function RotateBRUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateBRUP {
     from {
         transform: rotate(0deg) scale(0.2);
@@ -831,10 +831,10 @@ export function rotateBRUP() {
     );
 };
 
-export function rotateBLUP() {
+export function RotateBLUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateBLUP {
     from {
         transform: rotate(0deg) scale(0.2);
@@ -850,10 +850,10 @@ export function rotateBLUP() {
     );
 };
 
-export function rotateCenterDown() {
+export function RotateCenterDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateCenterDown {
     from {transform: rotate(0deg) scale(1);}
     to {transform: rotate(360deg) scale(0.2);}
@@ -863,10 +863,10 @@ export function rotateCenterDown() {
     );
 };
 
-export function rotateTopDown() {
+export function RotateTopDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateTopDown {
     from {
         transform: rotate(0deg) scale(1);
@@ -882,10 +882,10 @@ export function rotateTopDown() {
     );
 };
 
-export function rotateLeftDown() {
+export function RotateLeftDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateLeftDown {
     from {
         transform: rotate(0deg) scale(1);
@@ -901,10 +901,10 @@ export function rotateLeftDown() {
     );
 };
 
-export function rotateRightDown() {
+export function RotateRightDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateRightDown {
     from {
         transform: rotate(0deg) scale(1);
@@ -920,10 +920,10 @@ export function rotateRightDown() {
     );
 };
 
-export function rotateBottomDown() {
+export function RotateBottomDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateBottomDown {
     from {
         transform: rotate(0deg) scale(1);
@@ -939,10 +939,10 @@ export function rotateBottomDown() {
     );
 };
 
-export function rotateTLDown() {
+export function RotateTLDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateTLDown {
     from {
         transform: rotate(0deg) scale(1);
@@ -958,10 +958,10 @@ export function rotateTLDown() {
     );
 };
 
-export function rotateTRDown() {
+export function RotateTRDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateTRDown {
     from {
         transform: rotate(0deg) scale(1);
@@ -977,10 +977,10 @@ export function rotateTRDown() {
     );
 };
 
-export function rotateBRDown() {
+export function RotateBRDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateBRDown {
     from {
         transform: rotate(0deg) scale(1);
@@ -996,10 +996,10 @@ export function rotateBRDown() {
     );
 };
 
-export function rotateBLDown() {
+export function RotateBLDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes rotateBLDown {
     from {
         transform: rotate(0deg) scale(1);
@@ -1016,10 +1016,10 @@ export function rotateBLDown() {
 };
 
 
-export function flipHorBottom() {
+export function FlipHorBottom() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipHorBottom {
     from {
         transform: rotateX(0deg);
@@ -1034,10 +1034,10 @@ export function flipHorBottom() {
     );
 };
 
-export function flipHorTop() {
+export function FlipHorTop() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipHorTop {
     from {
         transform: rotateX(0deg);
@@ -1052,10 +1052,10 @@ export function flipHorTop() {
     );
 };
 
-export function flipVerLeft() {
+export function FlipVerLeft() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipVerLeft {
     from {
         transform: rotateY(0deg);
@@ -1070,10 +1070,10 @@ export function flipVerLeft() {
     );
 };
 
-export function flipVerRight() {
+export function FlipVerRight() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipVerRight {
     from {
         transform: rotateY(0deg);
@@ -1088,10 +1088,10 @@ export function flipVerRight() {
     );
 };
 
-export function flipDiagTR() {
+export function FlipDiagTR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipDiagTR {
     0% {
       transform: rotate3d(1, 1, 0, 0deg);
@@ -1105,10 +1105,10 @@ export function flipDiagTR() {
     );
 };
 
-export function flipDiagBL() {
+export function FlipDiagBL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipDiagBL {
     0% {
       transform: rotate3d(1, 1, 0, 0deg);
@@ -1122,10 +1122,10 @@ export function flipDiagBL() {
     );
 };
 
-export function flipDiagBR() {
+export function FlipDiagBR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipDiagBR {
     0% {
       transform: rotate3d(-1, 1, 0, 0deg);
@@ -1139,10 +1139,10 @@ export function flipDiagBR() {
     );
 };
 
-export function flipDiagTL() {
+export function FlipDiagTL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipDiagTL {
     0% {
       transform: rotate3d(-1, 1, 0, 0deg);
@@ -1156,10 +1156,10 @@ export function flipDiagTL() {
     );
 };
 
-export function flipTop() {
+export function FlipTop() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipTop {
     0% {
         transform: translateY(0) rotateX(0);
@@ -1175,10 +1175,10 @@ export function flipTop() {
     );
 };
 
-export function flipBottom() {
+export function FlipBottom() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipBottom {
     0% {
         transform: translateY(0) rotateX(0);
@@ -1195,10 +1195,10 @@ export function flipBottom() {
     );
 };
 
-export function flipLeft() {
+export function FlipLeft() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipLeft {
     0% {
         transform: translateX(0) rotateY(0);
@@ -1214,10 +1214,10 @@ export function flipLeft() {
     );
 };
 
-export function flipRight() {
+export function FlipRight() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipRight {
     0% {
       transform: translateX(0) rotateY(0);
@@ -1233,10 +1233,10 @@ export function flipRight() {
     );
 };
 
-export function flipHorBottomUP() {
+export function FlipHorBottomUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipHorBottomUP {
     0% {
         transform: rotateX(0deg) scale(1);
@@ -1255,10 +1255,10 @@ export function flipHorBottomUP() {
     );
 };
 
-export function flipHorTopUP() {
+export function FlipHorTopUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipHorTopUP {
     0% {
         transform: rotateX(0deg) scale(1);
@@ -1277,10 +1277,10 @@ export function flipHorTopUP() {
     );
 };
 
-export function flipVerLeftUP() {
+export function FlipVerLeftUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipVerLeftUP {
     0% {
         transform: rotateY(0deg) scale(1);
@@ -1299,10 +1299,10 @@ export function flipVerLeftUP() {
     );
 };
 
-export function flipVerRightUP() {
+export function FlipVerRightUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipVerRightUP {
     0% {
         transform: rotateY(0deg) scale(1);
@@ -1321,10 +1321,10 @@ export function flipVerRightUP() {
     );
 };
 
-export function flipDiagTRUP() {
+export function FlipDiagTRUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipDiagTRUP {
     0% {
       transform: rotate3d(1, 1, 0, 0deg) scale(1);
@@ -1343,10 +1343,10 @@ export function flipDiagTRUP() {
     );
 };
 
-export function flipDiagBLUP() {
+export function FlipDiagBLUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipDiagBLUP {
     0% {
       transform: rotate3d(1, 1, 0, 0deg) scale(1);
@@ -1365,10 +1365,10 @@ export function flipDiagBLUP() {
     );
 };
 
-export function flipDiagBRUP() {
+export function FlipDiagBRUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipDiagBRUP {
     0% {
       transform: rotate3d(-1, 1, 0, 0deg) scale(1);
@@ -1387,10 +1387,10 @@ export function flipDiagBRUP() {
     );
 };
 
-export function flipDiagTLUP() {
+export function FlipDiagTLUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipDiagTLUP {
     0% {
       transform: rotate3d(-1, 1, 0, 0deg) scale(1);
@@ -1409,10 +1409,10 @@ export function flipDiagTLUP() {
     );
 };
 
-export function flipTopUP() {
+export function FlipTopUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipTopUP {
     0% {
         transform: translateY(0) translateZ(0) rotateX(0);
@@ -1428,10 +1428,10 @@ export function flipTopUP() {
     );
 };
 
-export function flipBottomUP() {
+export function FlipBottomUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipBottomUP {
     0% {
         transform: translateY(0) translateZ(0) rotateX(0);
@@ -1447,10 +1447,10 @@ export function flipBottomUP() {
     );
 };
 
-export function flipLeftUP() {
+export function FlipLeftUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipLeftUP {
     0% {
         transform: translateX(0) translateZ(0) rotateY(0);
@@ -1466,10 +1466,10 @@ export function flipLeftUP() {
     );
 };
 
-export function flipRightUP() {
+export function FlipRightUP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipRightUP {
     0% {
       transform: translateX(0) translateZ(0) rotateY(0);
@@ -1485,10 +1485,10 @@ export function flipRightUP() {
     );
 };
 
-export function flipHorBottomDown() {
+export function FlipHorBottomDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipHorBottomDown {
     0% {
         transform: rotateX(0deg) scale(1);
@@ -1507,10 +1507,10 @@ export function flipHorBottomDown() {
     );
 };
 
-export function flipHorTopDown() {
+export function FlipHorTopDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipHorTopDown {
     0% {
         transform: rotateX(0deg) scale(1);
@@ -1529,10 +1529,10 @@ export function flipHorTopDown() {
     );
 };
 
-export function flipVerLeftDown() {
+export function FlipVerLeftDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipVerLeftDown {
     0% {
         transform: rotateY(0deg) scale(1);
@@ -1551,10 +1551,10 @@ export function flipVerLeftDown() {
     );
 };
 
-export function flipVerRightDown() {
+export function FlipVerRightDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipVerRightDown {
     0% {
         transform: rotateY(0deg) scale(1);
@@ -1573,10 +1573,10 @@ export function flipVerRightDown() {
     );
 };
 
-export function flipDiagTRDown() {
+export function FlipDiagTRDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipDiagTRDown {
     0% {
       transform: rotate3d(1, 1, 0, 0deg) scale(1);
@@ -1595,10 +1595,10 @@ export function flipDiagTRDown() {
     );
 };
 
-export function flipDiagBLDown() {
+export function FlipDiagBLDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipDiagBLDown {
     0% {
       transform: rotate3d(1, 1, 0, 0deg) scale(1);
@@ -1617,10 +1617,10 @@ export function flipDiagBLDown() {
     );
 };
 
-export function flipDiagBRDown() {
+export function FlipDiagBRDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipDiagBRDown {
     0% {
       transform: rotate3d(-1, 1, 0, 0deg) scale(1);
@@ -1639,10 +1639,10 @@ export function flipDiagBRDown() {
     );
 };
 
-export function flipDiagTLDown() {
+export function FlipDiagTLDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipDiagTLDown {
     0% {
       transform: rotate3d(-1, 1, 0, 0deg) scale(1);
@@ -1661,10 +1661,10 @@ export function flipDiagTLDown() {
     );
 };
 
-export function flipTopDown() {
+export function FlipTopDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipTopDown {
     0% {
         transform: translateY(0) translateZ(0) rotateX(0);
@@ -1680,10 +1680,10 @@ export function flipTopDown() {
     );
 };
 
-export function flipBottomDown() {
+export function FlipBottomDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipBottomDown {
     0% {
         transform: translateY(0) translateZ(0) rotateX(0);
@@ -1699,10 +1699,10 @@ export function flipBottomDown() {
     );
 };
 
-export function flipLeftDown() {
+export function FlipLeftDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipLeftDown {
     0% {
         transform: translateX(0) translateZ(0) rotateY(0);
@@ -1718,10 +1718,10 @@ export function flipLeftDown() {
     );
 };
 
-export function flipRightDown() {
+export function FlipRightDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes flipRightDown {
     0% {
       transform: translateX(0) translateZ(0) rotateY(0);
@@ -1738,10 +1738,10 @@ export function flipRightDown() {
 };
 
 
-export function swingTopFwd() {
+export function SwingTopFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingTopFwd {
     from {
         transform: rotateX(0deg);
@@ -1758,10 +1758,10 @@ export function swingTopFwd() {
     );
 };
 
-export function swingTopBck() {
+export function SwingTopBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingTopBck {
     from {
         transform: rotateX(0deg);
@@ -1778,10 +1778,10 @@ export function swingTopBck() {
     );
 };
 
-export function swingTRFwd() {
+export function SwingTRFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingTRFwd {
     0% {
         transform: rotate3d(1, 1, 0, 0deg);
@@ -1798,10 +1798,10 @@ export function swingTRFwd() {
     );
 };
 
-export function swingTRBck() {
+export function SwingTRBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingTRBck {
     0% {
         transform: rotate3d(1, 1, 0, 0deg);
@@ -1818,10 +1818,10 @@ export function swingTRBck() {
     );
 };
 
-export function swingRightFwd() {
+export function SwingRightFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingRightFwd {
     0% {
         transform: rotateY(0deg);
@@ -1838,10 +1838,10 @@ export function swingRightFwd() {
     );
 };
 
-export function swingRightBck() {
+export function SwingRightBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingRightBck {
     0% {
         transform: rotateY(0deg);
@@ -1858,10 +1858,10 @@ export function swingRightBck() {
     );
 };
 
-export function swingBRFwd() {
+export function SwingBRFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingBRFwd {
     0% {
       transform: rotate3d(-1, 1, 0, 0deg);
@@ -1877,10 +1877,10 @@ export function swingBRFwd() {
     );
 };
 
-export function swingBRBck() {
+export function SwingBRBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingBRBck {
     0% {
       transform: rotate3d(-1, 1, 0, 0deg);
@@ -1896,10 +1896,10 @@ export function swingBRBck() {
     );
 };
 
-export function swingBottomFwd() {
+export function SwingBottomFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingBottomFwd {
     from {
         transform: rotateX(0deg);
@@ -1916,10 +1916,10 @@ export function swingBottomFwd() {
     );
 };
 
-export function swingBottomBck() {
+export function SwingBottomBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingBottomBck {
     from {
         transform: rotateX(0deg);
@@ -1936,10 +1936,10 @@ export function swingBottomBck() {
     );
 };
 
-export function swingBLFwd() {
+export function SwingBLFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingBLFwd {
     0% {
       transform: rotate3d(1, 1, 0, 0deg);
@@ -1955,10 +1955,10 @@ export function swingBLFwd() {
     );
 };
 
-export function swingBLBck() {
+export function SwingBLBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingBLBck {
     0% {
       transform: rotate3d(1, 1, 0, 0deg);
@@ -1974,10 +1974,10 @@ export function swingBLBck() {
     );
 };
 
-export function swingLeftFwd() {
+export function SwingLeftFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingLeftFwd {
     from {
         transform: rotateY(0deg);
@@ -1994,10 +1994,10 @@ export function swingLeftFwd() {
     );
 };
 
-export function swingLeftBck() {
+export function SwingLeftBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingLeftBck {
     from {
         transform: rotateY(0deg);
@@ -2014,10 +2014,10 @@ export function swingLeftBck() {
     );
 };
 
-export function swingTLFwd() {
+export function SwingTLFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingTLFwd {
     0% {
       transform: rotate3d(-1, 1, 0, 0deg);
@@ -2033,10 +2033,10 @@ export function swingTLFwd() {
     );
 };
 
-export function swingTLBck() {
+export function SwingTLBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes swingTLBck {
     0% {
       transform: rotate3d(-1, 1, 0, 0deg);
@@ -2053,10 +2053,10 @@ export function swingTLBck() {
 };
 
 
-export function slideTop() {
+export function SlideTop() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideTop {
     from {
         transform: translateY(0px);
@@ -2071,10 +2071,10 @@ export function slideTop() {
     );
 };
 
-export function slideTR() {
+export function SlideTR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideTR {
     from {
         transform: translateY(0) translateX(0);
@@ -2089,10 +2089,10 @@ export function slideTR() {
     );
 };
 
-export function slideRight() {
+export function SlideRight() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideRight {
     from {
         transform: translateX(0);
@@ -2107,10 +2107,10 @@ export function slideRight() {
     );
 };
 
-export function slideBR() {
+export function SlideBR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideBR {
     from {
         transform: translateY(0) translateX(0);
@@ -2125,10 +2125,10 @@ export function slideBR() {
     );
 };
 
-export function slideBottom() {
+export function SlideBottom() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideBottom {
     from {
         transform: translateY(0);
@@ -2143,10 +2143,10 @@ export function slideBottom() {
     );
 };
 
-export function slideBL() {
+export function SlideBL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideBL {
     from {
         transform: translateY(0) translateX(0);
@@ -2161,10 +2161,10 @@ export function slideBL() {
     );
 };
 
-export function slideLeft() {
+export function SlideLeft() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideLeft {
     from {
         transform: translateX(0);
@@ -2179,10 +2179,10 @@ export function slideLeft() {
     );
 };
 
-export function slideTL() {
+export function SlideTL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideTL {
     from {
         transform: translateY(0) translateX(0);
@@ -2197,10 +2197,10 @@ export function slideTL() {
     );
 };
 
-export function slideTopFwd() {
+export function SlideTopFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideTopFwd {
     from {
         transform: translateY(0px) translateZ(0);
@@ -2215,10 +2215,10 @@ export function slideTopFwd() {
     );
 };
 
-export function slideTRFwd() {
+export function SlideTRFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideTRFwd {
     from {
         transform: translateY(0) translateX(0) translateZ(0);
@@ -2233,10 +2233,10 @@ export function slideTRFwd() {
     );
 };
 
-export function slideRightFwd() {
+export function SlideRightFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideRightFwd {
     from {
         transform: translateX(0) translateZ(0);
@@ -2251,10 +2251,10 @@ export function slideRightFwd() {
     );
 };
 
-export function slideBRFwd() {
+export function SlideBRFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideBRFwd {
     from {
         transform: translateY(0) translateX(0) translateZ(0);
@@ -2269,10 +2269,28 @@ export function slideBRFwd() {
     );
 };
 
-export function slideBLFwd() {
+export function SlideBottomFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
+{`@keyframes slideBottomFwd {
+    from {
+        transform: translateY(0) translateZ(0);
+    }
+
+    to {
+        transform: translateY(100%) translateZ(80px);
+    }
+};`}
+          </pre>
+        </>
+    );
+};
+
+export function SlideBLFwd() {
+    return(
+        <>
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideBLFwd {
     from {
         transform: translateY(0) translateX(0) translateZ(0);
@@ -2287,10 +2305,10 @@ export function slideBLFwd() {
     );
 };
 
-export function slideLeftFwd() {
+export function SlideLeftFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideLeftFwd {
     from {
         transform: translateX(0) translateZ(0);
@@ -2305,10 +2323,10 @@ export function slideLeftFwd() {
     );
 };
 
-export function slideTLFwd() {
+export function SlideTLFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideTLFwd {
     from {
         transform: translateY(0) translateX(0) translateZ(0);
@@ -2323,10 +2341,10 @@ export function slideTLFwd() {
     );
 };
 
-export function slideTopBck() {
+export function SlideTopBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideTopBck {
     from {
         transform: translateY(0px) translateZ(0);
@@ -2341,10 +2359,10 @@ export function slideTopBck() {
     );
 };
 
-export function slideTRBck() {
+export function SlideTRBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideTRBck {
     from {
         transform: translateY(0) translateX(0) translateZ(0);
@@ -2359,10 +2377,10 @@ export function slideTRBck() {
     );
 };
 
-export function slideRightBck() {
+export function SlideRightBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideRightBck {
     from {
         transform: translateX(0) translateZ(0);
@@ -2377,10 +2395,10 @@ export function slideRightBck() {
     );
 };
 
-export function slideBRBck() {
+export function SlideBRBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideBRBck {
     from {
         transform: translateY(0) translateX(0) translateZ(0);
@@ -2395,10 +2413,10 @@ export function slideBRBck() {
     );
 };
 
-export function slideBottomBck() {
+export function SlideBottomBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideBottomBck {
     from {
         transform: translateY(0) translateZ(0);
@@ -2413,10 +2431,10 @@ export function slideBottomBck() {
     );
 };
 
-export function slideBLBck() {
+export function SlideBLBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideBLBck {
     from {
         transform: translateY(0) translateX(0) translateZ(0);
@@ -2431,10 +2449,10 @@ export function slideBLBck() {
     );
 };
 
-export function slideLeftBck() {
+export function SlideLeftBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideLeftBck {
     from {
         transform: translateX(0) translateZ(0);
@@ -2449,10 +2467,10 @@ export function slideLeftBck() {
     );
 };
 
-export function slideTLBck() {
+export function SlideTLBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideTLBck {
     from {
         transform: translateY(0) translateX(0) translateZ(0);
@@ -2467,10 +2485,10 @@ export function slideTLBck() {
     );
 };
 
-export function slideTopRotate() {
+export function SlideTopRotate() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideTopRotate {
     from {
         transform: translateY(0px) rotateX(0deg);
@@ -2485,10 +2503,10 @@ export function slideTopRotate() {
     );
 };
 
-export function slideRightRotate() {
+export function SlideRightRotate() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideRightRotate {
     from {
         transform: translateX(0) rotateY(0deg);
@@ -2503,10 +2521,10 @@ export function slideRightRotate() {
     );
 };
 
-export function slideBottomRotate() {
+export function SlideBottomRotate() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideBottomRotate {
     from {
         transform: translateY(0) rotateX(0deg);
@@ -2521,10 +2539,10 @@ export function slideBottomRotate() {
     );
 };
 
-export function slideLeftRotate() {
+export function SlideLeftRotate() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes slideLeftRotate {
     from {
         transform: translateX(0) rotateY(0deg);
@@ -2539,10 +2557,10 @@ export function slideLeftRotate() {
     );
 };
 
-export function shadowTop() {
+export function ShadowTop() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadowTop {
     0% {
         box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.51);
@@ -2559,10 +2577,10 @@ export function shadowTop() {
     );
 };
 
-export function shadowTR() {
+export function ShadowTR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadowTR {
     0% {
         box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.51);
@@ -2579,10 +2597,10 @@ export function shadowTR() {
     );
 };
 
-export function shadowRight() {
+export function ShadowRight() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadowRight {
     0% {
         box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.51);
@@ -2599,10 +2617,10 @@ export function shadowRight() {
     );
 };
 
-export function shadowBR() {
+export function ShadowBR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadowBR {
     0% {
         box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.51);
@@ -2619,10 +2637,10 @@ export function shadowBR() {
     );
 };
 
-export function shadowBottom() {
+export function ShadowBottom() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadowBottom {
     0% {
         box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.51);
@@ -2639,10 +2657,10 @@ export function shadowBottom() {
     );
 };
 
-export function shadowBL() {
+export function ShadowBL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadowBL {
     0% {
         box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.51);
@@ -2659,10 +2677,10 @@ export function shadowBL() {
     );
 };
 
-export function shadowLeft() {
+export function ShadowLeft() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadowLeft {
     0% {
         box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.51);
@@ -2679,10 +2697,10 @@ export function shadowLeft() {
     );
 };
 
-export function shadowTL() {
+export function ShadowTL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadowTL {
     0% {
         box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.51);
@@ -2699,10 +2717,10 @@ export function shadowTL() {
     );
 };
 
-export function shadowTLPOP() {
+export function ShadowTLPOP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadowTLPOP {
     0% {
       box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
@@ -2718,10 +2736,10 @@ export function shadowTLPOP() {
     );
 };
 
-export function shadowTRPOP() {
+export function ShadowTRPOP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadowTRPOP {
     0% {
       box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
@@ -2737,10 +2755,10 @@ export function shadowTRPOP() {
     );
 };
 
-export function shadowBRPOP() {
+export function ShadowBRPOP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadowBRPOP {
     0% {
       box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
@@ -2756,10 +2774,10 @@ export function shadowBRPOP() {
     );
 };
 
-export function shadowBLPOP() {
+export function ShadowBLPOP() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadowBLPOP {
     0% {
       box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
@@ -2775,10 +2793,10 @@ export function shadowBLPOP() {
     );
 };
 
-export function shadow1() {
+export function Shadow1() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadow1 {
     from {
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -2795,10 +2813,10 @@ export function shadow1() {
     );
 };
 
-export function shadow2() {
+export function Shadow2() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadow2 {
     from {
         box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
@@ -2815,10 +2833,10 @@ export function shadow2() {
     );
 };
 
-export function shadow3() {
+export function Shadow3() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadow3 {
     from {
         box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 0px;
@@ -2835,10 +2853,10 @@ export function shadow3() {
     );
 };
 
-export function shadow4() {
+export function Shadow4() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shadow4 {
     from {
         box-shadow: inset rgba(0, 0, 0, 0.2) 0px 0px 0px 0px;
@@ -2855,10 +2873,10 @@ export function shadow4() {
     );
 };
 
-export function scaleInCenter() {
+export function ScaleInCenter() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleInCenter {
     0% {
         opacity: 0;
@@ -2875,10 +2893,10 @@ export function scaleInCenter() {
     );
 };
 
-export function scaleInUp() {
+export function ScaleInUp() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleInUp {
     0% {
         opacity: 0;
@@ -2895,10 +2913,10 @@ export function scaleInUp() {
     );
 };
 
-export function scaleInDown() {
+export function ScaleInDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleInDown {
     0% {
         opacity: 0;
@@ -2915,10 +2933,10 @@ export function scaleInDown() {
     );
 };
 
-export function scaleInLeft() {
+export function ScaleInLeft() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleInLeft {
     0% {
         opacity: 0;
@@ -2935,10 +2953,10 @@ export function scaleInLeft() {
     );
 };
 
-export function scaleInRight() {
+export function ScaleInRight() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleInRight {
     0% {
         opacity: 0;
@@ -2955,10 +2973,10 @@ export function scaleInRight() {
     );
 };
 
-export function scaleOutCenter() {
+export function ScaleOutCenter() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleOutCenter {
     0% {
         opacity: 1;
@@ -2975,10 +2993,10 @@ export function scaleOutCenter() {
     );
 };
 
-export function scaleOutUp() {
+export function ScaleOutUp() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleOutUp {
     0% {
         opacity: 1;
@@ -2995,10 +3013,10 @@ export function scaleOutUp() {
     );
 };
 
-export function scaleOutDown() {
+export function ScaleOutDown() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleOutDown {
     0% {
         opacity: 1;
@@ -3015,10 +3033,10 @@ export function scaleOutDown() {
     );
 };
 
-export function scaleOutLeft() {
+export function ScaleOutLeft() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleOutLeft {
     0% {
         opacity: 1;
@@ -3035,10 +3053,10 @@ export function scaleOutLeft() {
     );
 };
 
-export function scaleOutRight() {
+export function ScaleOutRight() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes scaleOutRight {
     0% {
         opacity: 1;
@@ -3055,10 +3073,10 @@ export function scaleOutRight() {
     );
 };
 
-export function trackingInExpand() {
+export function TrackingInExpand() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes trackingInExpand {
     0% {
         letter-spacing: -0.5em;
@@ -3074,10 +3092,10 @@ export function trackingInExpand() {
     );
 };
 
-export function trackingInExpandFwd() {
+export function TrackingInExpandFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes trackingInExpandFwd {
     0% {
         letter-spacing: -0.5em;
@@ -3095,10 +3113,10 @@ export function trackingInExpandFwd() {
     );
 };
 
-export function trackingInExpandFwdTop() {
+export function TrackingInExpandFwdTop() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes trackingInExpandFwdTop {
     0% {
         letter-spacing: -0.5em;
@@ -3116,10 +3134,10 @@ export function trackingInExpandFwdTop() {
     );
 };
 
-export function trackingInExpandFwdBottom() {
+export function TrackingInExpandFwdBottom() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes trackingInExpandFwdBottom {
     0% {
         letter-spacing: -0.5em;
@@ -3137,10 +3155,10 @@ export function trackingInExpandFwdBottom() {
     );
 };
 
-export function trackingInContract() {
+export function TrackingInContract() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes trackingInContract {
     0% {
         letter-spacing: 1em;
@@ -3156,10 +3174,10 @@ export function trackingInContract() {
     );
 };
 
-export function trackingInContractBck() {
+export function TrackingInContractBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes trackingInContractBck {
     0% {
         letter-spacing: 1em;
@@ -3177,10 +3195,10 @@ export function trackingInContractBck() {
     );
 };
 
-export function trackingInContractBckTop() {
+export function TrackingInContractBckTop() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes trackingInContractBckTop {
     0% {
         letter-spacing: 1em;
@@ -3198,10 +3216,10 @@ export function trackingInContractBckTop() {
     );
 };
 
-export function trackingInContractBckBottom() {
+export function TrackingInContractBckBottom() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes trackingInContractBckBottom {
     0% {
         letter-spacing: 1em;
@@ -3219,10 +3237,10 @@ export function trackingInContractBckBottom() {
     );
 };
 
-export function focusIn() {
+export function FocusIn() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes focusIn {
     0% {
         filter: blur(100px);
@@ -3239,10 +3257,10 @@ export function focusIn() {
     );
 };
 
-export function focusInExpand() {
+export function FocusInExpand() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes focusInExpand {
     0% {
         letter-spacing: -1em;
@@ -3261,10 +3279,10 @@ export function focusInExpand() {
     );
 };
 
-export function focusInExpandFwd() {
+export function FocusInExpandFwd() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes focusInExpandFwd {
     0% {
         transform: scale(0);
@@ -3289,10 +3307,10 @@ export function focusInExpandFwd() {
     );
 };
 
-export function focusInContract() {
+export function FocusInContract() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes focusInContract {
     0% {
         letter-spacing: 1em;
@@ -3311,10 +3329,10 @@ export function focusInContract() {
     );
 };
 
-export function focusInContractBck() {
+export function FocusInContractBck() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes focusInContractBck {
     0% {
         letter-spacing: 1em;
@@ -3335,10 +3353,10 @@ export function focusInContractBck() {
     );
 };
 
-export function textShdCenter() {
+export function TextShdCenter() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textShdCenter {
     0% {
         text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -3352,10 +3370,10 @@ export function textShdCenter() {
     );
 };
 
-export function textShdTop() {
+export function TextShdTop() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textShdTop {
     0% {
         text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -3369,10 +3387,10 @@ export function textShdTop() {
     );
 };
 
-export function textShdTR() {
+export function TextShdTR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textShdTR {
     0% {
         text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -3386,10 +3404,10 @@ export function textShdTR() {
     );
 };
 
-export function textShdRight() {
+export function TextShdRight() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textShdRight {
     0% {
         text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -3403,10 +3421,10 @@ export function textShdRight() {
     );
 };
 
-export function textShdBR() {
+export function TextShdBR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textShdBR {
     0% {
         text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -3420,10 +3438,10 @@ export function textShdBR() {
     );
 };
 
-export function textShdBottom() {
+export function TextShdBottom() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textShdBottom {
     0% {
         text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -3437,10 +3455,10 @@ export function textShdBottom() {
     );
 };
 
-export function textShdBL() {
+export function TextShdBL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textShdBL {
     0% {
         text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -3454,10 +3472,10 @@ export function textShdBL() {
     );
 };
 
-export function textShdLeft() {
+export function TextShdLeft() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textShdLeft {
     0% {
         text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -3471,10 +3489,10 @@ export function textShdLeft() {
     );
 };
 
-export function textShdTL() {
+export function TextShdTL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textShdTL {
     0% {
         text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -3488,10 +3506,10 @@ export function textShdTL() {
     );
 };
 
-export function textPopUpTop() {
+export function TextPopUpTop() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textPopUpTop {
     0% {
         transform: translateY(0);
@@ -3509,10 +3527,10 @@ export function textPopUpTop() {
     );
 };
 
-export function textPopUpTR() {
+export function TextPopUpTR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textPopUpTR {
     0% {
         transform: translateY(0) translateX(0);
@@ -3530,10 +3548,10 @@ export function textPopUpTR() {
     );
 };
 
-export function textPopUpRight() {
+export function TextPopUpRight() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textPopUpRight {
     0% {
         transform: translateX(0);
@@ -3551,10 +3569,10 @@ export function textPopUpRight() {
     );
 };
 
-export function textPopUpBR() {
+export function TextPopUpBR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textPopUpBR {
     0% {
         transform: translateY(0) translateX(0);
@@ -3572,10 +3590,10 @@ export function textPopUpBR() {
     );
 };
 
-export function textPopUpBottom() {
+export function TextPopUpBottom() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textPopUpBottom {
     0% {
         transform: translateY(0);
@@ -3593,10 +3611,10 @@ export function textPopUpBottom() {
     );
 };
 
-export function textPopUpBL() {
+export function TextPopUpBL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textPopUpBL {
     0% {
         transform: translateY(0) translateX(0);
@@ -3614,10 +3632,10 @@ export function textPopUpBL() {
     );
 };
 
-export function textPopUpLeft() {
+export function TextPopUpLeft() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textPopUpLeft {
     0% {
         transform: translateX(0);
@@ -3635,10 +3653,10 @@ export function textPopUpLeft() {
     );
 };
 
-export function textPopUpTL() {
+export function TextPopUpTL() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textPopUpTL {
     0% {
         transform: translateY(0) translateX(0);
@@ -3656,10 +3674,10 @@ export function textPopUpTL() {
     );
 };
 
-export function textJelloX() {
+export function TextJelloX() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textJelloX {
       0% {
         transform: scale3d(1, 1, 1);
@@ -3688,10 +3706,10 @@ export function textJelloX() {
     );
 };
 
-export function textJelloY() {
+export function TextJelloY() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textJelloY {
     0% {
         transform: scale3d(1, 1, 1);
@@ -3720,10 +3738,10 @@ export function textJelloY() {
     );
 };
 
-export function textJelloDiag1() {
+export function TextJelloDiag1() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textJelloDiag1 {
     0% {
         transform: skew(0deg 0deg);
@@ -3752,10 +3770,10 @@ export function textJelloDiag1() {
     );
 };
 
-export function textJelloDiag2() {
+export function TextJelloDiag2() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes textJelloDiag2 {
     0% {
         transform: skew(0deg 0deg);
@@ -3784,10 +3802,10 @@ export function textJelloDiag2() {
     );
 };
 
-export function vibrate1() {
+export function Vibrate1() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes vibrate1 {
       0% {
         transform: translate(0);
@@ -3816,10 +3834,10 @@ export function vibrate1() {
     );
 };
 
-export function vibrate2() {
+export function Vibrate2() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes vibrate2 {
     0% {
       transform: translateX(0);
@@ -3848,10 +3866,10 @@ export function vibrate2() {
     );
 };
 
-export function vibrate3() {
+export function Vibrate3() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes vibrate3 {
     0% {
         transform: translateY(0);
@@ -3880,10 +3898,10 @@ export function vibrate3() {
     );
 };
 
-export function shakeTop() {
+export function ShakeTop() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shakeTop {
     0%,
     100% {
@@ -3905,10 +3923,10 @@ export function shakeTop() {
     );
 };
 
-export function shakeBottom() {
+export function ShakeBottom() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shakeBottom {
     0%,
     100% {
@@ -3930,10 +3948,10 @@ export function shakeBottom() {
     );
 };
 
-export function shakeLeft() {
+export function ShakeLeft() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shakeLeft {
     0%,
     100% {
@@ -3955,10 +3973,10 @@ export function shakeLeft() {
     );
 };
 
-export function shakeRight() {
+export function ShakeRight() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shakeRight {
     0%,
     100% {
@@ -3980,10 +3998,10 @@ export function shakeRight() {
     );
 };
 
-export function shakeLR() {
+export function ShakeLR() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes shakeLR {
     0%,
     100% {
@@ -4005,10 +4023,10 @@ export function shakeLR() {
     );
 };
 
-export function bounceTop() {
+export function BounceTop() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes bounceTop {
     0% {
 	   transform: translateY(0%);
@@ -4043,10 +4061,10 @@ export function bounceTop() {
     );
 };
 
-export function bounceBottom() {
+export function BounceBottom() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes bounceBottom {
     0% {
         transform: translateY(0%);
@@ -4081,10 +4099,10 @@ export function bounceBottom() {
     );
 };
 
-export function bounceLeft() {
+export function BounceLeft() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes bounceLeft {
     0% {
         transform: translateX(0%);
@@ -4119,10 +4137,10 @@ export function bounceLeft() {
     );
 };
 
-export function bounceRight() {
+export function BounceRight() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes bounceRight {
     0% {
         transform: translateX(0%);
@@ -4157,10 +4175,10 @@ export function bounceRight() {
     );
 };
 
-export function pulsate1() {
+export function Pulsate1() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes pulsate1 {
     0%,20%,30% {transform: scale(1);}
     40% {transform: scale(1.5);}
@@ -4173,10 +4191,10 @@ export function pulsate1() {
     );
 };
 
-export function pulsate2() {
+export function Pulsate2() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes pulsate2 {
     0% {transform: scale(1);}
     25% {transform: scale(1.2);}
@@ -4189,10 +4207,10 @@ export function pulsate2() {
     );
 };
 
-export function pulsate3() {
+export function Pulsate3() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes pulsate3 {
     0% {transform: scale(1);}
     25% {transform: scale(1.2);}
@@ -4205,10 +4223,10 @@ export function pulsate3() {
     );
 };
 
-export function pulsate4() {
+export function Pulsate4() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes pulsate4 {
     0% {
         transform: scale(0.2);
@@ -4228,10 +4246,10 @@ export function pulsate4() {
     );
 };
 
-export function blink1() {
+export function Blink1() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes blink1 {
   0%,
   50%,
@@ -4248,10 +4266,10 @@ export function blink1() {
     );
 };
 
-export function blink2() {
+export function Blink2() {
     return(
         <>
-          <pre className="w-max h-max bg-[#E0E0E0] shadow-sh1 p-[1rem] rounded-[.5rem]">
+          <pre className="w-max h-max p-[1rem] rounded-[.5rem]">
 {`@keyframes blink2 {
     0% {
         opacity: 1;

@@ -1430,7 +1430,7 @@
 .swing-bl-fwd {
     animation: swingBLFwd var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
-.swhing-bl-bck {
+.swing-bl-bck {
     animation: swingBLBck var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
 .swing-left-fwd {
@@ -2049,19 +2049,19 @@
     animation: shadowTLPOP var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
 
-.shadow-1 {
+.shadow-a {
     animation: shadow1 var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
 
-.shadow-2 {
+.shadow-b {
     animation: shadow2 var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
 
-.shadow-3 {
+.shadow-c {
     animation: shadow3 var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
 
-.shadow-4 {
+.shadow-d {
     animation: shadow4 var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
 
@@ -2926,11 +2926,11 @@
     animation: textJelloY var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
 
-.text-jello-diag-1 {
+.text-jello-diag-a {
     animation: textJelloDiag1 var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
 
-.text-jello-diag-2 {
+.text-jello-diag-b {
     animation: textJelloDiag2 var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
 
@@ -3034,15 +3034,15 @@
 
 /* attention vibrate */
 
-.vibrate-1 {
+.vibrate-a {
     animation: vibrate1 var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
 
-.vibrate-2 {
+.vibrate-b {
     animation: vibrate2 var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
 
-.vibrate-3 {
+.vibrate-c {
     animation: vibrate3 var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
 
@@ -3368,16 +3368,16 @@
 
 /* attention pulsate */
 
-.pulsate-1 {
+.pulsate-a {
     animation: pulsate1 var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
-.pulsate-2 {
+.pulsate-b {
     animation: pulsate2 var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
-.pulsate-3 {
+.pulsate-c {
     animation: pulsate3 var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
-.pulsate-4 {
+.pulsate-d {
     animation: pulsate4 var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
 
@@ -3424,10 +3424,10 @@
 
 /* attention blink */
 
-.blink-1 {
+.blink-a {
     animation: blink1 var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
-.blink-2 {
+.blink-b {
     animation: blink2 var(--duration-anim) var(--transition-type) var(--anim-direction) var(--anim-delay) var(--anim-type) var(--is-infinite);
 }
 

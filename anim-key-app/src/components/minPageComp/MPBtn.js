@@ -30,7 +30,7 @@ const MpBtn = () => {
 
   const navigate = useNavigate();
   const navigateToApp = () => {
-    navigate('/appPage/basic/basicScale/scale-up-center');
+    navigate('/appPage/basic/basicScale/1.scale-up-center');
   };
 
     return(

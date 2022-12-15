@@ -1,39 +1,30 @@
 import React, { useEffect } from "react";
 
 import AnimBtn from "./AnimationBtn";
+import { changeBtn } from "../../functions/functions";
 
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-
-import { changeBtn } from "../../functions/functions";
-// eslint-disable-next-line
-import { changeAnim } from "../../functions/functions";
 
 const NavAnimAttention = () => {
 
     const location = useLocation();
 
     useEffect(() => {
-        changeBtn('/appPage/attention/Vibrate/vibrate-1', "atParentVibrate");
-        changeBtn('/appPage/attention/Shake/shake-top', "atParentShake");
-        changeBtn('/appPage/attention/Bounce/bounce-top', "atParentBounce");
-        changeBtn('/appPage/attention/Pulsate/pulsate-1', "atParentPulsate");
-        changeBtn('/appPage/attention/Blink/blink-1', "atParentBlink");
-
-        changeAnim('/appPage/attention/Vibrate/vibrate-1', 'vibrate-1');
-        changeAnim('/appPage/attention/Shake/shake-top', 'shake-top');
-        changeAnim('/appPage/attention/Bounce/bounce-top', 'bounce-top');
-        changeAnim('/appPage/attention/Pulsate/pulsate-1', 'pulsate-1');
-        changeAnim('/appPage/attention/Blink/blink-1', 'blink-1');
+        changeBtn('Vibrate', "atParentVibrate");
+        changeBtn('Shake', "atParentShake");
+        changeBtn('Bounce', "atParentBounce");
+        changeBtn('Pulsate', "atParentPulsate");
+        changeBtn('Blink', "atParentBlink");
     }, [location]);
 
     let navigate = useNavigate();
 
-    const goToAtVibrate = () => navigate('/appPage/attention/Vibrate/vibrate-1');
-    const goToAtShake = () => navigate('/appPage/attention/Shake/shake-top');
-    const goToAtBounce = () => navigate('/appPage/attention/Bounce/bounce-top');
-    const goToAtPulsate = () => navigate('/appPage/attention/Pulsate/pulsate-1');
-    const goToAtBlink = () => navigate('/appPage/attention/Blink/blink-1');
+    const goToAtVibrate = () => navigate('/appPage/attention/Vibrate/1.vibrate-a');
+    const goToAtShake = () => navigate('/appPage/attention/Shake/1.shake-top');
+    const goToAtBounce = () => navigate('/appPage/attention/Bounce/1.bounce-top');
+    const goToAtPulsate = () => navigate('/appPage/attention/Pulsate/1.pulsate-a');
+    const goToAtBlink = () => navigate('/appPage/attention/Blink/1.blink-a');
 
     return(
         <>

@@ -31,10 +31,6 @@ import { AttentionBounce } from "../../components/AppPageComp/animationPages/ani
 import { AttentionPulsate } from "../../components/AppPageComp/animationPages/animate/AnimComp";
 import { AttentionBlink } from "../../components/AppPageComp/animationPages/animate/AnimComp";
 
-import { ShadowBasic } from "../../components/AppPageComp/animationPages/animate/AnimComp";
-import { ShadowInset } from "../../components/AppPageComp/animationPages/animate/AnimComp";
-import { Shadow3D } from "../../components/AppPageComp/animationPages/animate/AnimComp";
-
 import ShowCode from "../../components/animationCod/Code";
 
 const AppPage = () => {
@@ -114,10 +110,6 @@ const AppPage = () => {
                     <Route path="/attention/Bounce/*" element={<AttentionBounce />} />
                     <Route path="/attention/Pulsate/*" element={<AttentionPulsate />} />
                     <Route path="/attention/Blink/*" element={<AttentionBlink />} />
-
-                    <Route path="/shadows/*" element={<ShadowBasic />} />
-                    <Route path="/shadows/inset/*" element={<ShadowInset />} />
-                    <Route path="/shadows/3d/*" element={<Shadow3D />} />
                   </Routes>
                   <ShowCode />
               </div>
