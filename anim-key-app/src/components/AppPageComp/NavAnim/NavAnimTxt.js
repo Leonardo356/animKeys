@@ -39,6 +39,7 @@ const NavAnimTxt = () => {
            justify-start
            px-[1rem]
            gap-[1rem]
+           overflow-scroll
            "
            >
               <div onClick={goToTextScale} className="scaleParentText"><AnimBtn animName='Scale' /></div>

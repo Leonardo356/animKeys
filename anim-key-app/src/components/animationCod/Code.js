@@ -35,13 +35,17 @@ const ShowCode = () => {
           onClick={displayCode}
           className="
           absolute 
-          bottom-[2rem] 
-          left-[50%] 
-          -translate-x-[50%]
+          laptop:bottom-[2rem] 
+          laptop:right-[50%]
+          mobile:right-[.5rem]
+          mobile:bottom-[.5rem]
+          mobile:translate-x-[0%]
+          laptop:translate-x-[50%]
           "><CodeIcon /></div>
 
           <div className="
-          w-max
+          laptop:w-max
+          mobile:w-full
           shadow-sh1
           h-full
           absolute
@@ -83,7 +87,7 @@ const CodeContainer = props => {
               <div className=" text-[1.3rem] text-txtColor2 mb-[.5rem]">Class:</div>
               <ClassAnim />
               <div className="mt-[2rem] text-[1.3rem] text-txtColor2 mb-[.5rem]">KeyFrames:</div>
-              <div className="w-[30vmax] h-max bg-[#E0E0E0] shadow-sh1 rounded-[0.5rem] max-h-[10vmax] overflow-scroll">
+              <div className="laptop:w-[30vmax] w-full h-max bg-[#E0E0E0] shadow-sh1 rounded-[0.5rem] max-h-[15vmax] overflow-scroll">
                <Routes >
                   <Route path="/basic/basicScale/1.scale-up-center" element={<ScaleUpCenter />} />
                   <Route path="/basic/basicScale/2.scale-up-top" element={<ScaleUpTop />} />
@@ -328,7 +332,8 @@ const ClassAnim = () => {
           <pre className="
           flex
           flex-col
-          w-[30vmax]
+          laptop:w-[30vmax]
+          mobile:w-full
           h-max
           p-[1rem]
           bg-[#E0E0E0]
@@ -359,8 +364,11 @@ const CodeIcon = () => {
     return(
         <>
           <div className="
-          w-[5vmax]
-          h-[2vmax]
+          laptop:w-[5rem]
+          laptop:h-[2rem]
+          mobile:w-[3rem]
+          mobile:h-[3rem]
+          mobile:text-[1rem]
           shadow-sh1
           rounded-full
           flex
@@ -368,10 +376,12 @@ const CodeIcon = () => {
           items-center
           relative
           z-[900]
-          bg-white
-          text-txtColor2
+          laptop:bg-white
+          mobile:bg-txtColor2
+          mobile:text-white
+          laptop:text-txtColor2
           font-semibold
-          text-[1.2vmax]
+          xlScreen:text-[1.2vmax]
           cursor-pointer
           ">
             <p>{'</>'}</p>

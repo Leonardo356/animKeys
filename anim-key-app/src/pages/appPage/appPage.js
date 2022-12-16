@@ -5,7 +5,6 @@ import NavAnim from "../../components/AppPageComp/NavAnim/NavAnim";
 
 import NavAnimTxt from "../../components/AppPageComp/NavAnim/NavAnimTxt";
 import NavAnimAttention from "../../components/AppPageComp/NavAnim/NavAnimAttention";
-import NavAnimShadows from "../../components/AppPageComp/NavAnim/NavAnimShadow";
 
 import AnimShapes from "../../components/AppPageComp/animationPages/AnimShapes";
 
@@ -30,6 +29,7 @@ import { AttentionShake } from "../../components/AppPageComp/animationPages/anim
 import { AttentionBounce } from "../../components/AppPageComp/animationPages/animate/AnimComp";
 import { AttentionPulsate } from "../../components/AppPageComp/animationPages/animate/AnimComp";
 import { AttentionBlink } from "../../components/AppPageComp/animationPages/animate/AnimComp";
+import ResetAnimBtn from "../../components/AppPageComp/resetAnimation/resetAnimation";
 
 import ShowCode from "../../components/animationCod/Code";
 
@@ -73,7 +73,6 @@ const AppPage = () => {
                     <Route path="/*" element={<NavAnim />} />
                     <Route path="/text/*" element={<NavAnimTxt />} />
                     <Route path="/attention/*" element={<NavAnimAttention />} />
-                    <Route path="/shadows/*" element={<NavAnimShadows />} />
                   </Routes>
               </div>
 
@@ -90,6 +89,7 @@ const AppPage = () => {
               ">
                   <AnimShapes />
                   <AnimSettings />
+                  <ResetAnimBtn />
                   <Routes >
                     <Route path="/basic/basicScale/*" element={<BasicScale />} />
                     <Route path="/basic/basicRotate/*" element={<BasicRotate />} />

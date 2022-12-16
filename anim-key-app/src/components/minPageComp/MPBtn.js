@@ -38,8 +38,10 @@ const MpBtn = () => {
           <button
           onClick={navigateToApp}
           className="
-          w-[12rem]
-          h-[4rem]
+          laptop:w-[12rem]
+          laptop:h-[4rem]
+          mobile:w-[8rem]
+          mobile:h-[3rem]
           text-white
           text-[1.3rem]
           hover:shadow-sh1

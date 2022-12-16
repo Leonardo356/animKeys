@@ -37,6 +37,7 @@ const NavAnimAttention = () => {
            justify-start
            px-[1rem]
            gap-[1rem]
+           overflow-scroll
            "
            >
               <div className="atParentVibrate" onClick={goToAtVibrate} ><AnimBtn size='w-full h-full' animName='Vibrate' /></div>

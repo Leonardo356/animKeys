@@ -32,8 +32,10 @@ const Square = () => {
    return(
     <>
         <div className="
-        w-[10vmax]
-        h-[10vmax]
+        laptop:w-[10vmax]
+        laptop:h-[10vmax]
+        mobile:w-[8rem]
+        mobile:h-[8rem]
         rounded-[1rem]
         squareShape
         text-txtColor2

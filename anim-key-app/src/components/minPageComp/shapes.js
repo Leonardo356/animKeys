@@ -16,9 +16,9 @@ const ShapesCont = () => {
          "
          >
             <Oval />
-            <div className="absolute top-[0%] -left-[6rem]"> <ShapesImg width='200' height='200' src={Shape1}/> </div>
-            <div className="absolute top-[30%] -right-[5rem]"> <ShapesImg width='200' height='200' src={Shape2} /> </div>
-            <div className="absolute top-[70%] -left-[5rem]"> <ShapesImg width='220' height='220' src={Shape3} /> </div>
+            <div className="absolute top-[0%] w-[12vmax] -left-[6rem]"> <ShapesImg width='200' height='200' src={Shape1}/> </div>
+            <div className="absolute top-[30%] w-[12vmax] -right-[5rem]"> <ShapesImg width='200' height='200' src={Shape2} /> </div>
+            <div className="absolute top-[70%] w-[12vmax] -left-[5rem]"> <ShapesImg width='220' height='220' src={Shape3} /> </div>
          </div>
         </>
     );
@@ -31,11 +31,15 @@ const Oval = () => {
             let x = e.pageX - window.scrollX;
             let y = e.pageY - window.scrollY;
 
+            let shape = document.querySelector('.shape');
+
+           if(shape !== null) {
             gsap.to('.shape', {
                 x: -x/100,
                 y: -y/50,
                 duration: 3,
-            })
+            });
+           }
         });
     }, []);
 
@@ -77,11 +81,17 @@ const ShapesImg = props => {
             let x = e.pageX - window.scrollX;
             let y = e.pageY - window.scrollY;
 
-            gsap.to('.img', {
-                x: x/100,
-                y: y/50,
-                duration: 3,
-            })
+            let imgs = document.querySelectorAll('.img');
+
+           imgs.forEach(img => {
+            if(img !== null) {
+                gsap.to(img, {
+                    x: x/100,
+                    y: y/50,
+                    duration: 3,
+                });
+            }
+           })
         });
     }, []);
 

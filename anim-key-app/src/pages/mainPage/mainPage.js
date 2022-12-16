@@ -25,7 +25,8 @@ const MainPage = () => {
             flex
             flex-col
             py-[3rem]
-            pl-[4rem]
+            laptop:pl-[4rem]
+            mobile:pl-[1rem]
             ">
                 <div className="mb-auto"><MainPageTxt /></div>
                 <MpBtn />
@@ -40,7 +41,7 @@ const MainPage = () => {
             items-center
             "
             >
-                <ShapesCont />
+                <div className="mobile:hidden laptop:flex"><ShapesCont /></div>
             </div>
           </div>
         </>

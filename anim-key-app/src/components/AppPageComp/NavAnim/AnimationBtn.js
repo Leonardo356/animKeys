@@ -34,9 +34,11 @@ const AnimBtn = props => {
            onMouseOver={changeColorHover}
            onMouseLeave={changeColorHover}
            className="
-           w-[7vmax] 
+           laptop:w-[7.5rem] 
+           laptop:h-[7.5rem]
+           mobile:w-[6rem]
+           mobile:h-[6rem]
            cursor-pointer 
-           h-[7vmax] 
            rounded-full
            shadow-sh1
            flex
@@ -45,7 +47,7 @@ const AnimBtn = props => {
            justify-center
            items-center 
            bg-txtColor2">
-              <h1 className=" relative z-[200] font-medium text-[1.2rem] text-white">{props.animName}</h1>
+              <h1 className=" relative z-[200] font-medium mobile:text-[1rem] laptop:text-[1.2rem] text-white">{props.animName}</h1>
               <div className={` ${props.size} z-[100] absolute bganimBtns duration-[300ms] rounded-full bg-[#344966]`}></div>
               <div className="z-[0] absolute bganimBtns2 w-0 h-0 duration-[500ms] rounded-full bg-[#5C5C5C]"></div>
            </div>

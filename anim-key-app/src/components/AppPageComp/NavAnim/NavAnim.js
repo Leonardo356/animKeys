@@ -38,6 +38,7 @@ const NavAnim = () => {
            justify-start
            px-[1rem]
            gap-[1rem]
+           overflow-scroll
            "
            >
               <div className="scaleParentBasic" onClick={navigateToBasicScale} ><AnimBtn size='w-full h-full' animName='Scale' /></div>

@@ -49,7 +49,8 @@ const Txt = props => {
            className={
             `w-max
              h-max
-             text-[5vmax]
+             laptop:text-[5vmax]
+             mobile:text-[6vmax]
              leading-none
              ${props.fontWeight}
              ${props.txtColor}

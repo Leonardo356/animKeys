@@ -1,28 +1,49 @@
 import React from "react";
-import {Routes, Route} from 'react-router-dom';
 
 const AnimSettings = () => {
+
+    const displaySettingsOnMobile = e => {
+        let settingsContainer = document.querySelector('.settingsContainer');
+        let closeSettingsSvg = document.querySelector('.closeSettingsSvg');
+        let settingsSvg = document.querySelector('.settingsSvg');
+        let isDisplayed = window.getComputedStyle(settingsContainer).display;
+
+        let toggleAnimListBtn = document.querySelector('.toggleAnimListBtn');
+        let displayAnimationList = document.querySelector('.displayAnimationList');
+        let animListContainer = document.querySelector('.animListContainerOnDOM');
+
+        if(isDisplayed !== 'flex') {
+            settingsContainer.style.display = 'flex';
+            e.currentTarget.innerHTML = closeSettingsSvg.innerHTML;
+
+            animListContainer.style.display = '';
+            toggleAnimListBtn.innerHTML = displayAnimationList.innerHTML;
+        } else {
+            settingsContainer.style.display = '';
+            e.currentTarget.innerHTML = settingsSvg.innerHTML;
+        }
+    };
+
     return(
         <>    
-          <Routes >
-                    <Route path="/*" element={<Settings />} />
-                    <Route path="/basicRotate/*" element={<Settings />} />
-                    <Route path="/basicFlip/*" element={<Settings />} />
-                    <Route path="/basicSwing/*" element={<Settings />} />
-                    <Route path="/basicSlide/*" element={<Settings />} />
-                    <Route path="/basicShadow/*" element={<Settings />} />
-                    <Route path="/text/*" element={<Settings />} />
-                    <Route path="/text/textTracking/*" element={<Settings />} />
-                    <Route path="/text/textBlur/*" element={<Settings />} />
-                    <Route path="/text/textShadow/*" element={<Settings />} />
-                    <Route path="/text/textPop-up/*" element={<Settings />} />
-                    <Route path="/text/textJello/*" element={<Settings />} />
-                    <Route path="/attention/*" element={<Settings />} />
-                    <Route path="/attention/Shake/*" element={<Settings />} />
-                    <Route path="/attention/Bounce/*" element={<Settings />} />
-                    <Route path="/attention/Pulsate/*" element={<Settings />} />
-                    <Route path="/attention/Blink/*" element={<Settings />} />
-                  </Routes>
+           <div className="settingsSvg hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" className="bi bi-sliders" viewBox="0 0 16 16">
+                   <path d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+               </svg>
+           </div>
+           <div className="closeSettingsSvg hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" className="bi bi-x-lg" viewBox="0 0 16 16">
+                   <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+           </div>
+           <div
+           onClick={displaySettingsOnMobile} 
+           className="absolute top-[.5rem] toggleSettingsBtn mobile:flex justify-center laptop:hidden items-center text-white left-[.5rem] w-[3rem] rounded-full h-[3rem] bg-txtColor2">
+               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" className="bi bi-sliders" viewBox="0 0 16 16">
+                  <path d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+               </svg>
+           </div>
+           <div className=" settingsContainer laptop:flex mobile:hidden"><Settings /></div>
         </>
     );
 };
@@ -114,9 +135,14 @@ const Settings = () => {
        absolute
        top-[50%]
        -translate-y-[50%]
-       left-[2rem]
-       w-[20%]
+       laptop:left-[2rem]
+       mobile:w-[90%]
+       mobile:left-[50%]
+       mobile:-translate-x-[50%]
+       smScreen:w-[50%]
+       laptop:w-[20%]
        h-[80%]
+       laptop:-translate-x-[0%]
        bg-txtColor2
        rounded-[.6rem]
        flex
@@ -128,7 +154,7 @@ const Settings = () => {
        text-[1.1rem]
        "
        >
-          <div className="w-full h-[3rem] px-[1rem] items-center flex bg-[white] rounded-[1rem]">
+          <div className="w-full h-[3.5rem] px-[1rem] items-center flex bg-[white] rounded-[.5rem]">
               <input
               onChange={changeDuration}
               className="w-full h-full durationInp rounded-[1rem] pr-[.5rem]"
@@ -138,7 +164,7 @@ const Settings = () => {
               <div className="ml-auto">/sec</div>
           </div>
 
-          <div className="w-full h-[3rem] px-[1rem] items-center flex bg-[white] rounded-[1rem]">
+          <div className="w-full h-[3.5rem] px-[1rem] items-center flex bg-[white] rounded-[.5rem]">
             <select
             onChange={changeTimmingFunction}
             defaultValue={'DEFAULT'}
@@ -151,7 +177,7 @@ const Settings = () => {
             </select>
           </div>
 
-          <div className="w-full h-[3rem] px-[1rem] items-center flex bg-[white] rounded-[1rem]">
+          <div className="w-full h-[3.5rem] px-[1rem] items-center flex bg-[white] rounded-[.5rem]">
               <input 
               onChange={changeDelay}
               className="w-full delayInp h-full rounded-[1rem] pr-[.5rem]"
@@ -161,7 +187,7 @@ const Settings = () => {
               <div className="ml-auto">/sec</div>
           </div>
 
-          <div className="w-full h-[3rem] px-[1rem] items-center flex bg-[white] rounded-[1rem]">
+          <div className="w-full h-[3.5rem] px-[1rem] items-center flex bg-[white] rounded-[.5rem]">
             <select 
             onChange={changeDirection}
             defaultValue={'DEFAULT'} 
@@ -174,7 +200,7 @@ const Settings = () => {
             </select>
           </div>
 
-          <div className="w-full h-[3rem] px-[1rem] items-center flex bg-[white] rounded-[1rem]">
+          <div className="w-full h-[3.5rem] px-[1rem] items-center flex bg-[white] rounded-[.5rem]">
             <select 
             onChange={changeFillMode}
             defaultValue={'DEFAULT'} 
@@ -186,7 +212,7 @@ const Settings = () => {
             </select>
           </div>
 
-          <div className="w-full h-[3rem] px-[1rem] items-center flex bg-[white] rounded-[1rem]">
+          <div className="w-full h-[3.5rem] px-[1rem] items-center flex bg-[white] rounded-[.5rem]">
              <div>Infinite</div>
              <input 
              onChange={changeInfinite}

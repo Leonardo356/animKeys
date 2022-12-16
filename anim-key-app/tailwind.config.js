@@ -16,6 +16,16 @@ module.exports = {
         black: '#000000',
       },
 
+      screens: {
+        mobile: '319px',
+        tablets: '481px',
+        smScreen: '769px',
+        laptop: '1025px',
+        xlScreen: '1200px',
+        xxlScreen: '1500px',
+        xxxlScreen: '1800px',
+      },
+
       boxShadow: {
         insetShadow: 'inset 0px 8px 16px 1px rgba(0,0,0,0.18)',
         sh1: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',

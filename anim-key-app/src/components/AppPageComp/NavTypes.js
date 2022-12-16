@@ -54,6 +54,7 @@ const NavTypes = () => {
 };
 
 const NavBtn = props => {
+
     return(
       <>
          <div
